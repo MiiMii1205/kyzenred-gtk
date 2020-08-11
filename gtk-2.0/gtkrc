@@ -1,5 +1,5 @@
-# Theme:       Breeze-gtk
-# Description: Breeze theme for GTK+2.0
+# Theme:       Kyrenred
+# Description: A full KDE theme based on gamer aesthetics and modern minimalism (GTK themes and assets)
 
 gtk-color-scheme = "text_color:#eff0f1"
 gtk-color-scheme = "base_color:#232629"
