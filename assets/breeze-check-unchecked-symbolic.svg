@@ -7,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 18 18"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="breeze-check-unchecked-symbolic.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   viewBox="0 0 18 18"
+   version="1.1"
+   id="svg8">
   <metadata
      id="metadata9">
     <rdf:RDF>
@@ -26,61 +26,69 @@
   <defs
      id="defs7" />
   <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1720"
-     inkscape:window-height="1289"
-     id="namedview5"
-     showgrid="false"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="18.541911"
-     inkscape:cx="8.2415175"
-     inkscape:cy="1.5839484"
-     inkscape:window-x="610"
-     inkscape:window-y="204"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg8"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg8">
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="1.5839484"
+     inkscape:cx="-1.3853219"
+     inkscape:zoom="18.541911"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     id="namedview5"
+     inkscape:window-height="1402"
+     inkscape:window-width="1708"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff">
     <sodipodi:guide
-       position="14.5,17"
-       orientation="0,1"
+       inkscape:locked="false"
        id="guide885"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="1,3.5"
-       orientation="1,0"
-       id="guide887"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="17,3.5"
-       orientation="1,0"
-       id="guide889"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="14.5,1"
        orientation="0,1"
+       position="14.5,17" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide887"
+       orientation="1,0"
+       position="1,3.5" />
+    <sodipodi:guide
+       inkscape:locked="false"
+       id="guide889"
+       orientation="1,0"
+       position="17,3.5" />
+    <sodipodi:guide
+       inkscape:locked="false"
        id="guide891"
-       inkscape:locked="false" />
+       orientation="0,1"
+       position="14.5,1" />
   </sodipodi:namedview>
   <path
      style="opacity:0.5;fill:#eff0f1;fill-opacity:1;stroke-width:0.96883857;color-rendering:auto"
      d="M 7.78125,1.000047 1,7.78325 V 17 H 10.216797 L 17,10.218749 V 10.216749 1 Z"
-     id="path86"
+     id="path837"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccccc"
-     class="warning" />
-  <path
-     style="fill:#942228;fill-opacity:1;stroke-width:0.48438144"
-     d="M 17,1 H 7.78125 L 1,7.78125 V 17 H 10.216797 L 16.998047,10.21875 Z M 15.689453,10.21675 10.216797,15.689406 H 2.310547 V 7.78125 L 7.78125,2.3125 H 15.689453 Z"
-     id="path2038-6"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccccccccccccc"
      class="error" />
+  <path
+     class="warning"
+     sodipodi:nodetypes="cccccccc"
+     inkscape:connector-curvature="0"
+     id="path86"
+     d="M 7.78125,1.000047 1,7.78325 V 17 H 10.216797 L 17,10.218749 V 10.216749 1 Z"
+     style="opacity:0.5;fill:#eff0f1;fill-opacity:1;stroke-width:0.96883857;color-rendering:auto" />
+  <path
+     class="success"
+     sodipodi:nodetypes="cccccccccccccc"
+     inkscape:connector-curvature="0"
+     id="path2038-6"
+     d="M 17,1 H 7.78125 L 1,7.78125 V 17 H 10.216797 L 16.998047,10.21875 Z M 15.689453,10.21675 10.216797,15.689406 H 2.310547 V 7.78125 L 7.78125,2.3125 H 15.689453 Z"
+     style="fill:#942228;fill-opacity:1;stroke-width:0.48438144" />
 </svg>

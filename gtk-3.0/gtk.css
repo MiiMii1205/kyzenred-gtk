@@ -763,17 +763,24 @@ headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabl
 button.osd.sidebar-button, notebook > header > tabs > arrow.osd, popover.background.touch-selection button.osd, popover.background.magnifier button.osd,
 button.osd, button.sidebar-button, notebook > header > tabs > arrow, .csd popover.background.touch-selection button, .csd popover.background.magnifier button, popover.background.touch-selection button, popover.background.magnifier button,
 button {
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 3px;
   padding: 6px 6px;
-  background-clip: border-box;
+  background-clip: content-box;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   text-shadow: none;
-  -gtk-icon-shadow: none;
+  -gtk-icon-shadow: none; 
   color: @theme_button_foreground_normal;
-  border-color: @borders;
-  background-color: @theme_button_background_normal; }
+    
+  -gtk-icon-palette: error transparent, success @theme_button_decoration_hover, warning @theme_button_background_normal;   
+  border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+  background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+  border-image-slice: 7 fill;
+  border-image-width: 7;
+  background-size: 100%;
+  background-color: transparent;
+}
   
   button.flat.osd,
   button.osd.sidebar-button, notebook > header > tabs > arrow.flat, notebook > header > tabs > arrow, popover.background.touch-selection button.flat, popover.background.touch-selection button.sidebar-button, popover.background.magnifier button.flat, popover.background.magnifier button.sidebar-button,
@@ -786,6 +793,7 @@ button {
     color: @theme_button_foreground_normal;
     text-shadow: none;
     -gtk-icon-shadow: none;
+    border-image-source: none;
     transition: none; }
     notebook > header > tabs > arrow:hover, popover.background.touch-selection button.flat:hover, popover.background.touch-selection button.sidebar-button:hover, popover.background.magnifier button.flat:hover, popover.background.magnifier button.sidebar-button:hover,
     button.flat:hover,
@@ -806,7 +814,12 @@ button {
   button.osd:hover, notebook > header > tabs > arrow:hover, popover.background.touch-selection button:hover, popover.background.magnifier button:hover,
   button:hover {
     color: @theme_button_foreground_normal;
-    border-color: @theme_button_decoration_hover;
+    
+    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;
+
+    border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+    background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+    background-size: 100%;
     -gtk-icon-effect: none; }
   
   button.osd:active, notebook > header > tabs > arrow:active, popover.background.touch-selection button:active, popover.background.magnifier button:active,
@@ -816,40 +829,72 @@ button {
   button.osd:focus, notebook > header > tabs > arrow:focus, popover.background.touch-selection button:focus, popover.background.magnifier button:focus,
   button:focus {
     color: @theme_button_foreground_active;
-    border-color: @theme_button_decoration_focus;
-    background-color: @theme_button_decoration_focus;
+    /* border-color: @theme_button_decoration_focus; */
+    /*background-color: @theme_button_decoration_focus;*/
+    
+    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover,  warning @theme_button_background_normal;
+    border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+    background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+    background-size: 100%;
     transition-duration: 50ms; }
     notebook > header > tabs > arrow:active:hover, popover.background.touch-selection button:active:hover, popover.background.magnifier button:active:hover,
     button:active:hover, notebook > header > tabs > arrow:checked:hover, popover.background.touch-selection button:checked:hover, popover.background.magnifier button:checked:hover,
     button:checked:hover, notebook > header > tabs > arrow:focus:hover, popover.background.touch-selection button:focus:hover, popover.background.magnifier button:focus:hover,
     button:focus:hover {
       color: @theme_button_foreground_normal;
-      border-color: @theme_button_decoration_hover;
-      background-color: @theme_button_decoration_hover; }
+      /* border-color: @theme_button_decoration_hover; */
+      /* background-color: @theme_button_decoration_hover; */
+    
+      -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
+      border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+      background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+      background-size: 100%;
+    }
   
   button.osd:backdrop, notebook > header > tabs > arrow:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop,
   button:backdrop {
     color: @theme_button_foreground_backdrop;
-    border-color: @unfocused_borders;
-    background-color: @theme_button_background_backdrop;
+    /* border-color: @unfocused_borders; */
+    /*background-color: @theme_button_background_backdrop;*/
+
+    -gtk-icon-palette: error transparent, success @theme_button_decoration_hover, warning @theme_button_background_normal;
+    border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+    background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+    background-size: 100%;
     -gtk-icon-effect: none; }
     notebook > header > tabs > arrow:backdrop:hover, popover.background.touch-selection button:backdrop:hover, popover.background.magnifier button:backdrop:hover,
     button:backdrop:hover {
       color: @theme_button_foreground_backdrop;
-      border-color: @theme_button_decoration_hover;
-      background-color: @theme_button_background_backdrop; }
+      /* border-color: @theme_button_decoration_hover; */
+      /*background-color: @theme_button_background_backdrop;*/
+      
+      -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
+      border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+      background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+      background-size: 100%;
+
+    }
     notebook > header > tabs > arrow:backdrop:active, popover.background.touch-selection button:backdrop:active, popover.background.magnifier button:backdrop:active,
     button:backdrop:active, notebook > header > tabs > arrow:backdrop:checked, popover.background.touch-selection button:backdrop:checked, popover.background.magnifier button:backdrop:checked,
     button:backdrop:checked, notebook > header > tabs > arrow:backdrop:focus, popover.background.touch-selection button:backdrop:focus, popover.background.magnifier button:backdrop:focus,
     button:backdrop:focus {
       color: @theme_button_foreground_active_backdrop;
-      border-color: @theme_button_decoration_focus_backdrop;
-      background-color: @theme_button_decoration_focus_backdrop; }
+      /* border-color: @theme_button_decoration_focus_backdrop; */
+      /*background-color: @theme_button_decoration_focus_backdrop;*/
+
+      -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
+      border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg")); 
+      background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+      background-size: 100%;
+
+    }
     notebook > header > tabs > arrow:backdrop:disabled, popover.background.touch-selection button:backdrop:disabled, popover.background.magnifier button:backdrop:disabled,
     button:backdrop:disabled {
       color: @theme_button_foreground_backdrop_insensitive;
-      border-color: @unfocused_insensitive_borders;
-      background-color: @theme_button_background_backdrop_insensitive; }
+      /* border-color: @unfocused_insensitive_borders; */
+      /*background-color: @theme_button_background_backdrop_insensitive;*/ 
+    
+    }
       notebook > header > tabs > arrow:backdrop:disabled > .label, popover.background.touch-selection button:backdrop:disabled > .label, popover.background.magnifier button:backdrop:disabled > .label,
       button:backdrop:disabled > .label {
         color: inherit; }
@@ -858,8 +903,8 @@ button {
     button:backdrop:disabled:checked, notebook > header > tabs > arrow:backdrop:disabled:focus, popover.background.touch-selection button:backdrop:disabled:focus, popover.background.magnifier button:backdrop:disabled:focus,
     button:backdrop:disabled:focus {
       color: @theme_button_foreground_active_backdrop_insensitive;
-      border-color: @theme_button_decoration_focus_backdrop_insensitive;
-      background-color: @theme_button_decoration_focus_backdrop_insensitive; }
+      /* border-color: @theme_button_decoration_focus_backdrop_insensitive; */
+      /*background-color: @theme_button_decoration_focus_backdrop_insensitive;*/ }
       notebook > header > tabs > arrow:backdrop:disabled:active > .label, popover.background.touch-selection button:backdrop:disabled:active > .label, popover.background.magnifier button:backdrop:disabled:active > .label,
       button:backdrop:disabled:active > .label, notebook > header > tabs > arrow:backdrop:disabled:checked > .label, popover.background.touch-selection button:backdrop:disabled:checked > .label, popover.background.magnifier button:backdrop:disabled:checked > .label,
       button:backdrop:disabled:checked > .label, notebook > header > tabs > arrow:backdrop:disabled:focus > .label, popover.background.touch-selection button:backdrop:disabled:focus > .label, popover.background.magnifier button:backdrop:disabled:focus > .label,
@@ -903,8 +948,8 @@ button {
   button.osd:disabled, notebook > header > tabs > arrow:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled,
   button:disabled {
     color: @theme_button_foreground_insensitive;
-    border-color: @insensitive_borders;
-    background-color: @theme_button_background_insensitive; }
+    /* border-color: @insensitive_borders; */
+    /*background-color: @theme_button_background_insensitive;*/ }
     notebook > header > tabs > arrow:disabled > .label, popover.background.touch-selection button:disabled > .label, popover.background.magnifier button:disabled > .label,
     button:disabled > .label {
       color: inherit; }
@@ -913,8 +958,9 @@ button {
     button:disabled:checked, notebook > header > tabs > arrow:disabled:focus, popover.background.touch-selection button:disabled:focus, popover.background.magnifier button:disabled:focus,
     button:disabled:focus {
       color: @theme_button_foreground_active_insensitive;
-      border-color: @theme_button_decoration_focus_insensitive;
-      background-color: @theme_button_decoration_focus_insensitive; }
+      /* border-color: @theme_button_decoration_focus_insensitive; */
+      /* background-color: @theme_button_decoration_focus_insensitive;  */
+    }
       notebook > header > tabs > arrow:disabled:active > .label, popover.background.touch-selection button:disabled:active > .label, popover.background.magnifier button:disabled:active > .label,
       button:disabled:active > .label, notebook > header > tabs > arrow:disabled:checked > .label, popover.background.touch-selection button:disabled:checked > .label, popover.background.magnifier button:disabled:checked > .label,
       button:disabled:checked > .label, notebook > header > tabs > arrow:disabled:focus > .label, popover.background.touch-selection button:disabled:focus > .label, popover.background.magnifier button:disabled:focus > .label,
@@ -2817,12 +2863,16 @@ check, radio {
   min-width: 18px;
   animation: none;
   background-color: transparent;
-  -gtk-icon-palette: error @theme_button_decoration_focus, success @borders, warning @theme_button_background_normal;
+  -gtk-icon-palette: error transparent, success @theme_button_decoration_hover, warning @theme_button_background_normal;
   -gtk-icon-shadow: 1px 1px rgba(35, 38, 41, 0.2); }
+
+  check:checked, radio:checked {
+    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover,  warning @theme_button_background_normal;
+  }
   check:only-child, radio:only-child {
     margin: 0; }
   check:hover, radio:hover {
-    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_focus, warning @theme_button_background_normal; }
+    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal; }
   check:disabled, radio:disabled {
     -gtk-icon-palette: error @theme_button_decoration_focus_insensitive, success @insensitive_borders, warning @theme_button_background_insensitive; }
   menu menuitem check, menu menuitem radio {
@@ -37544,7 +37594,7 @@ popover.background radiobutton.button {
   notebook > header > tabs > arrow.button radio,
   popover.background checkbutton.button radio,
   popover.background radiobutton.button radio {
-    -gtk-icon-palette: error @theme_button_decoration_focus, success @borders, warning @theme_button_background_normal;
+    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;
     -gtk-icon-shadow: 1px 1px rgba(35, 38, 41, 0.2); }
     modelbutton.flat check:hover, popover.background checkbutton.flat check:hover,
     popover.background radiobutton.flat check:hover, modelbutton.flat radio:hover, popover.background checkbutton.flat radio:hover,
