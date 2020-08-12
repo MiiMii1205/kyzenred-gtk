@@ -92,16 +92,18 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+<path
+     class="error"
+     sodipodi:nodetypes="ccccc"
+     d="M 0,2.8938672e-4 V 9.9976098 h 9.9973155 l 6e-6,-9.99732041328 z"
+     style="opacity:0.5;fill:#eff0f1;fill-opacity:1;stroke-width:0.968839;color-rendering:auto"
+     id="path86" />
+    
   <path
      id="path142"
      style="opacity:0.5;fill:#eff0f1;fill-opacity:1;stroke-width:0.968839;color-rendering:auto"
      d="M 0,2.8938672e-4 V 9.9976098 l 9.9973155,0 6e-6,-9.99732041328 z"
      sodipodi:nodetypes="ccccc"
      class="warning" />
-  <path
-     class="error"
-     sodipodi:nodetypes="ccccc"
-     d="M 0,2.8938672e-4 V 9.9976098 h 9.9973155 l 6e-6,-9.99732041328 z"
-     style="opacity:0.5;fill:#eff0f1;fill-opacity:1;stroke-width:0.968839;color-rendering:auto"
-     id="path86" />
+
 </svg>

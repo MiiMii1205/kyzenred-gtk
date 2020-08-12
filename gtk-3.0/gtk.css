@@ -768,7 +768,7 @@ button {
   padding: 6px 6px;
   background-clip: content-box;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
   text-shadow: none;
   -gtk-icon-shadow: none; 
   color: @theme_button_foreground_normal;
@@ -817,6 +817,7 @@ button {
     
     -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;
 
+    background-color: transparent;
     border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
     background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
     background-size: 100%;
@@ -831,12 +832,29 @@ button {
     color: @theme_button_foreground_active;
     /* border-color: @theme_button_decoration_focus; */
     /*background-color: @theme_button_decoration_focus;*/
-    
-    -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover,  warning @theme_button_background_normal;
+      -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
+
     border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
     background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
     background-size: 100%;
-    transition-duration: 50ms; }
+    transition-duration: 50ms;
+
+   }
+
+
+   button.osd:active, notebook > header > tabs > arrow:active, popover.background.touch-selection button:active, popover.background.magnifier button:active,
+   button:active,
+   button.osd:checked, notebook > header > tabs > arrow:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked,
+   button:checked
+    {
+     -gtk-icon-palette: error @theme_base_color, success @theme_base_color, warning @theme_base_color;     
+
+     border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+     background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+     background-size: 100%;
+     transition-duration: 50ms;
+
+    }
     notebook > header > tabs > arrow:active:hover, popover.background.touch-selection button:active:hover, popover.background.magnifier button:active:hover,
     button:active:hover, notebook > header > tabs > arrow:checked:hover, popover.background.touch-selection button:checked:hover, popover.background.magnifier button:checked:hover,
     button:checked:hover, notebook > header > tabs > arrow:focus:hover, popover.background.touch-selection button:focus:hover, popover.background.magnifier button:focus:hover,
@@ -850,6 +868,18 @@ button {
       background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
       background-size: 100%;
     }
+    
+    notebook > header > tabs > arrow:active:hover, popover.background.touch-selection button:active:hover, popover.background.magnifier button:active:hover,
+    button:active:hover {
+      color: @theme_button_foreground_normal;
+      /* border-color: @theme_button_decoration_hover; */
+      /* background-color: @theme_button_decoration_hover; */
+    
+      -gtk-icon-palette: error @theme_base_color, success @theme_base_color, warning @theme_base_color;   
+      border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
+      background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
+      background-size: 100%;
+    }
   
   button.osd:backdrop, notebook > header > tabs > arrow:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop,
   button:backdrop {
@@ -857,6 +887,7 @@ button {
     /* border-color: @unfocused_borders; */
     /*background-color: @theme_button_background_backdrop;*/
 
+    background-color: transparent;
     -gtk-icon-palette: error transparent, success @theme_button_decoration_hover, warning @theme_button_background_normal;
     border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
     background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
@@ -867,12 +898,12 @@ button {
       color: @theme_button_foreground_backdrop;
       /* border-color: @theme_button_decoration_hover; */
       /*background-color: @theme_button_background_backdrop;*/
-      
       -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
       border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg"));
       background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
       background-size: 100%;
 
+      background-color: transparent;
     }
     notebook > header > tabs > arrow:backdrop:active, popover.background.touch-selection button:backdrop:active, popover.background.magnifier button:backdrop:active,
     button:backdrop:active, notebook > header > tabs > arrow:backdrop:checked, popover.background.touch-selection button:backdrop:checked, popover.background.magnifier button:backdrop:checked,
@@ -882,10 +913,11 @@ button {
       /* border-color: @theme_button_decoration_focus_backdrop; */
       /*background-color: @theme_button_decoration_focus_backdrop;*/
 
-      -gtk-icon-palette: error @theme_button_decoration_focus, success @theme_button_decoration_hover, warning @theme_button_background_normal;     
+      -gtk-icon-palette: error @theme_base_color, success @theme_base_color, warning @theme_base_color;     
       border-image-source: -gtk-recolor(url("../assets/button-symbolic.svg")); 
       background-image: -gtk-recolor(url("../assets/button-background-symbolic.svg"));
       background-size: 100%;
+      background-color: transparent;
 
     }
     notebook > header > tabs > arrow:backdrop:disabled, popover.background.touch-selection button:backdrop:disabled, popover.background.magnifier button:backdrop:disabled,
