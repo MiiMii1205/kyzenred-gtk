@@ -1,81 +1,14 @@
 gtk-auto-mnemonics  = 1
+gtk-primary-button-warps-slider = 1
 
-style "default"
-{
-    xthickness  = 1
-    ythickness  = 1
-
-    # Style Properties
-
-    GtkScrollbar::activate-slider                 = 1
-    GtkWidget::focus-line-width                 = 0
-    GtkWidget::new-tooltip-style                  = 1
-    GtkWidget::tooltip-alpha                      = 230
-    GtkWidget::tooltip-radius                   = 2
-    GtkMenuBar::window-dragging                 = 1
-    GtkToolbar::window-dragging                 = 1
-    GtkToolbar::internal-padding                  = 5
-    GtkToolButton::icon-spacing                 = 4
-
-    GtkSeparatorMenuItem::horizontal-padding      = 3
-    GtkSeparatorMenuItem::wide-separators         = 1
-    GtkSeparatorMenuItem::separator-height        = 1
-
-    GtkCheckMenuItem::indicator-size                  = 18
-    GtkRadioMenuItem::indicator-size                  = 18
-
-    GtkButton::child-displacement-y             = 0
-    GtkButton::default-border                     = { 0, 0, 0, 0 }
-    GtkButton::default-outside_border             = { 0, 0, 0, 0 }
-
-    GtkScrollbar::trough-border                 = 0
-    GtkScrollbar::slider-width                  = 20
-    GtkRange::trough-border                       = 0
-    GtkRange::slider-width                        = 7
-    GtkRange::stepper-size                        = 0
-
-    GtkScrollbar::has-backward-stepper            = 1
-    GtkScrollbar::has-forward-stepper               = 1
-    GtkScrollbar::stepper-size                      = 4
-    GtkScrollbar::stepper-spacing                     = 0
-    GtkScrolledWindow ::scrollbar-spacing           = 0
-    GtkScrolledWindow ::scrollbars-within-bevel = 1
-
-    GtkVScale::slider_length                      = 20
-    GtkVScale::slider_width                       = 20
-    GtkHScale::slider_length                      = 20
-    GtkHScale::slider_width                       = 20
-
-    GtkStatusbar::shadow_type                     = GTK_SHADOW_NONE
-    GtkSpinButton::shadow_type                  = GTK_SHADOW_NONE
-    GtkMenuBar::shadow-type                       = GTK_SHADOW_NONE
-    GtkMenuBar::internal-padding                  = 3
-    GtkMenu::horizontal-padding                 = 0
-    GtkMenu::vertical-padding                     = 0
-
-    GtkNotebook::tab-overlap                      = 1
-    GtkNotebook::tab-curvature                  = 3
-
-    GtkCheckButton::indicator_spacing             = 3
-    #GtkOptionMenu::indicator_spacing              = { 0, 0, 0, 0 }
-
-    GtkTreeView::row_ending_details               = 0
-    GtkTreeView::expander-size                    = 12
-    GtkTreeView::vertical-separator               = 1
-    GtkTreeView::horizontal-separator             = 4
-    GtkTreeView::allow-rules                        = 1
-
-    GtkProgressBar::min-horizontal-bar-height     = 8
-    GtkProgressBar::min-vertical-bar-width        = 8
-
-    GtkEntry::state-hint                              = 1
+style "default_colors" {
 
     # Colors
 
     bg[NORMAL]          = @bg_color
     bg[PRELIGHT]          = @bg_color
     bg[SELECTED]          = @selected_bg_color
-    bg[INSENSITIVE]   = @bg_color
+    bg[INSENSITIVE]   = @insensitive_bg_color
     bg[ACTIVE]          = @bg_color
 
     fg[NORMAL]          = @fg_color
@@ -93,8 +26,118 @@ style "default"
     base[NORMAL]          = @base_color
     base[PRELIGHT]      = @base_color
     base[SELECTED]      = @selected_bg_color
-    base[INSENSITIVE]   = @bg_color
+    base[INSENSITIVE]   = @insensitive_base_color
     base[ACTIVE]          = @selected_bg_color
+    
+}
+
+style "toplevel_hack" {
+  engine "adwaita" {}
+}
+
+
+style "default"  = "default_colors"
+{
+    xthickness  = 1
+    ythickness  = 1
+
+    # Style Properties
+
+    GnomeHRef::link_color = @link_color
+    GtkHTML::link-color = @link_color
+    GtkHTML::vlink-color = @visited_link_color
+    GtkIMHtml::hyperlink-color = @link_color
+    GtkIMHtml::hyperlink-visited-color = @visited_link_color
+    GtkWidget::link-color = @link_color
+    GtkWidget::visited-link-color = @visited_link_color
+    GtkWidget::focus-line-width                 = 0
+    GtkWidget::focus-padding                      = 0
+    GtkMenuBar::window-dragging                 = 1
+    GtkToolbar::window-dragging                 = 1
+    GtkToolbar::internal-padding                  = 2
+    GtkToolbar::space-size                        = 7
+    GtkToolButton::icon-spacing                 = 4
+
+    GtkWidget::tooltip-radius                   = 0
+    GtkWidget::tooltip-alpha                      = 230
+    GtkWidget::new-tooltip-style                  = 1
+
+    GtkSeparatorMenuItem::horizontal-padding      = 0
+    GtkSeparatorMenuItem::wide-separators         = 1
+    GtkSeparatorMenuItem::separator-height        = 1
+
+    GtkButton::child-displacement-y               = 0
+    GtkButton::default-border                     = { 0, 0, 0, 0 }
+    GtkButton::default-outside_border             = { 0, 0, 0, 0 }
+    GtkButton::inner-border                       = { 7, 7, 7, 7 }
+
+    GtkComboBox::inner-border                       = { 7, 7, 7, 7 }
+
+    GtkEntry::state-hint                            = 1
+    GtkEntry::inner-border                          = { 2, 2, 2, 2 }
+    GtkEntry::honors-transparent-bg-hint            = 1
+
+    GtkScrollbar::trough-border = 0
+    GtkRange::trough-border = 0
+    GtkRange::slider-width      = 10
+    GtkRange::stepper-size = 0
+    GtkRange::activate-slider = 1
+
+    GtkScrollbar::activate-slider                 = 1
+    GtkScrollbar::has-backward-stepper            = 0
+    GtkScrollbar::has-forward-stepper             = 0
+    GtkScrollbar::min-slider-length               = 32
+    GtkScrollbar::slider-width                    = 12
+    GtkScrolledWindow ::scrollbar-spacing           = 0
+    GtkScrolledWindow ::scrollbars-within-bevel = 1
+
+    GtkCheckMenuItem::indicator-size                  = 18
+    GtkRadioMenuItem::indicator-size                  = 18
+
+    GtkScrollbar::stepper-size                      = 4
+    GtkScrollbar::stepper-spacing                     = 0
+    GtkScrollbar::activate-slider                 = 1
+
+    GtkScale::slider_length                      = 10
+    GtkScale::slider_width                       = 10
+    GtkScale::trough-side-details                 = 1
+  
+    GtkStatusbar::shadow_type                     = GTK_SHADOW_NONE
+    GtkSpinButton::shadow_type                    = GTK_SHADOW_NONE
+    GtkMenuBar::shadow-type                       = GTK_SHADOW_NONE
+    GtkToolbar::shadow-type                       = GTK_SHADOW_NONE
+    GtkMenuBar::internal-padding                  = 0
+
+    GtkMenu::horizontal-padding                   = 0
+    GtkMenu::vertical-padding                     = 0
+
+    GtkNotebook::tab-overlap                    = 0
+    GtkNotebook::tab-curvature                  = 7
+
+    GtkCheckButton::indicator-size = 16
+    GtkCheckButton::indicator_spacing = 2
+    GtkOptionMenu::indicator_spacing              = { 0, 10, 0, 0 }
+
+    GtkTreeView::row_ending_details               = 0
+    GtkTreeView::expander-size                    = 16
+    GtkTreeView::vertical-separator               = 4
+    GtkTreeView::horizontal-separator             = 4
+    GtkTreeView::allow-rules                      = 0
+
+    GtkTreeView::odd-row-color = @base_color_alt
+    GtkTreeView::even-row-color = @base_color
+
+    GtkExpander::expander-size = 16
+
+    GtkProgressBar::min-horizontal-bar-height     = 4
+    GtkProgressBar::min-vertical-bar-width        = 4
+
+    GtkPaned::handle-size  = 8
+    GtkHPaned::handle-size = 8
+    GtkVPaned::handle-size = 8
+
+
+    engine "adwaita" {}
 
     # All pixmap options are consolidated below this point
 
@@ -103,440 +146,814 @@ style "default"
 
     # Check Buttons
 
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = NORMAL
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = PRELIGHT
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked-hover.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = ACTIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked-active.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                     = SELECTED
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = INSENSITIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked-insensitive.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-              state                   = NORMAL
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch       = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-                state                 = PRELIGHT
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-hover.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-                state                 = ACTIVE
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-              state                   = SELECTED
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = INSENSITIVE
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-insensitive.png"
-            overlay_stretch         = FALSE
+     image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = NORMAL
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-off.png"
+      overlay_stretch   = FALSE
     }
-
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = PRELIGHT
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-off-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = ACTIVE
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-off-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = INSENSITIVE
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-off-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = SELECTED
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-off.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = NORMAL
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-on.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = PRELIGHT
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-on-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = ACTIVE
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-on-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = INSENSITIVE
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-on-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = SELECTED
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-on.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = NORMAL
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-mixed.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = PRELIGHT
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-mixed-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = ACTIVE
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-mixed-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = INSENSITIVE
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-mixed-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = CHECK
+      recolorable       = TRUE
+      state             = SELECTED
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/check-mixed.png"
+      overlay_stretch   = FALSE
+    }
+    
     # Radio Buttons
 
-    image
-    {
-            function                = OPTION
-            state                   = NORMAL
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = PRELIGHT
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked-hover.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = ACTIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked-active.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = SELECTED
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = INSENSITIVE
-            shadow                = OUT
-            overlay_file            = "../assets/radio-unchecked-insensitive.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                     = NORMAL
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                   = PRELIGHT
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-hover.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                   = ACTIVE
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch       = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                   = SELECTED
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch       = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                     = INSENSITIVE
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-insensitive.png"
-            overlay_stretch         = FALSE
-        }
+image {
+      function          = OPTION
+      state             = NORMAL
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-off.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = PRELIGHT
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-off-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = ACTIVE
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-off-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = INSENSITIVE
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-off-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = SELECTED
+      shadow            = OUT
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-off.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = NORMAL
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-on.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = PRELIGHT
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-on-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = ACTIVE
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-on-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = INSENSITIVE
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-on-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = SELECTED
+      shadow            = IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-on.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = NORMAL
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-mixed.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = PRELIGHT
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-mixed-hover.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = ACTIVE
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-mixed-active.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      state             = INSENSITIVE
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-mixed-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+    image {
+      function          = OPTION
+      recolorable       = TRUE
+      state             = SELECTED
+      shadow            = ETCHED_IN
+      overlay_file      = "../../assets/gtk2/Check-Radio/radio-mixed.png"
+      overlay_stretch   = FALSE
+    }
+
+
 
     # Arrows
 
-    image
-    {
-      function              = ARROW
-      state                   = NORMAL
-      overlay_file          = "../assets/arrow-up.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = UP
+    
+    image {
+      function          = ARROW
+      overlay_file      = "../../assets/gtk2/Arrows/up.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = UP
     }
-    image
-    {
-      function              = ARROW
-      state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-up-hover.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = UP
+    image {
+      function          = ARROW
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Arrows/up.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = UP
     }
-    image
-    {
-      function              = ARROW
-      state                   = ACTIVE
-      overlay_file          = "../assets/arrow-up-active.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = UP
+    image {
+      function          = ARROW
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Arrows/up.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = UP
     }
-    image
-    {
-      function              = ARROW
-      state                   = INSENSITIVE
-      overlay_file          = "../assets/arrow-up-insensitive.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = UP
+    image {
+      function          = ARROW
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Arrows/up-insensitive.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = UP
     }
-
-    image
-    {
-    function                = ARROW
-      state                   = NORMAL
-      overlay_file          = "../assets/arrow-down.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = DOWN
+    image {
+      function          = ARROW
+      state             = NORMAL
+      overlay_file      = "../../assets/gtk2/Arrows/down.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = DOWN
     }
-    image
-    {
-      function              = ARROW
-      state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-down-hover.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = DOWN
+    image {
+      function          = ARROW
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Arrows/down.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = DOWN
     }
-    image
-    {
-      function              = ARROW
-      state                   = ACTIVE
-      overlay_file          = "../assets/arrow-down-active.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = DOWN
+    image {
+      function          = ARROW
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Arrows/down.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = DOWN
     }
-
-    image
-    {
-      function              = ARROW
-      state                   = INSENSITIVE
-      overlay_file          = "../assets/arrow-down-insensitive.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = DOWN
+    image {
+      function          = ARROW
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Arrows/down-insensitive.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = DOWN
     }
-
-    image
-    {
-      function              = ARROW
-      state                   = NORMAL
-      overlay_file          = "../assets/arrow-left.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = LEFT
+    image {
+      function          = ARROW
+      overlay_file      = "../../assets/gtk2/Arrows/left.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = LEFT
     }
-    image
-    {
-        function                = ARROW
-        state                   = PRELIGHT
-        overlay_file          = "../assets/arrow-left-hover.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = LEFT
+    image {
+      function          = ARROW
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Arrows/left.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = LEFT
     }
-    image
-    {
-        function                = ARROW
-        state                   = ACTIVE
-        overlay_file          = "../assets/arrow-left-active.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = LEFT
+    image {
+      function          = ARROW
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Arrows/left.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = LEFT
     }
-    image
-    {
-        function                = ARROW
-        state                   = INSENSITIVE
-        overlay_file          = "../assets/arrow-left-insensitive.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = LEFT
+    image {
+      function          = ARROW
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Arrows/left-insensitive.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = LEFT
     }
-
-    image
-    {
-        function                = ARROW
-        state                     = NORMAL
-        overlay_file          = "../assets/arrow-right.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = RIGHT
+    image {
+      function          = ARROW
+      overlay_file      = "../../assets/gtk2/Arrows/right.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = RIGHT
     }
-    image
-    {
-        function                = ARROW
-        state                   = PRELIGHT
-        overlay_file          = "../assets/arrow-right-hover.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = RIGHT
+    image {
+      function          = ARROW
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Arrows/right.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = RIGHT
     }
-    image
-    {
-        function                = ARROW
-        state                   = ACTIVE
-        overlay_file          = "../assets/arrow-right-active.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = RIGHT
+    image {
+      function          = ARROW
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Arrows/right.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = RIGHT
     }
-    image
-    {
-        function                = ARROW
-        state                   = INSENSITIVE
-        overlay_file          = "../assets/arrow-right-insensitive.png"
-        overlay_border      = { 0, 0, 0, 0 }
-        overlay_stretch     = FALSE
-        arrow_direction     = RIGHT
+    image {
+      function          = ARROW
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Arrows/right-insensitive.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+      arrow_direction   = RIGHT
     }
-
 
     # Option Menu ../assets
 
-    image
-    {
-      function            = TAB
-      state                 = INSENSITIVE
-      overlay_file        = "../assets/arrow-down-insensitive.png"
-      overlay_stretch     = FALSE
+ image {
+      function          = TAB
+      state             = NORMAL
+      overlay_file      = "../../assets/gtk2/Arrows/down.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
     }
-    image
-    {
-      function              = TAB
-      state                   = NORMAL
-      overlay_file          = "../assets/arrow-down.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
+    image {
+      function          = TAB
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Arrows/down.png"
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
     }
-    image
-    {
-      function              = TAB
-      state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-down.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
+    image {
+      function          = TAB
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Arrows/down-insensitive.png"
+      overlay_stretch   = FALSE
+    }
+   
+    # Lines
+    
+    image {
+      function          = VLINE
+      file              = "../../assets/gtk2/Lines/v-line.png"
+      border            = { 0, 2, 0, 0 }
+      stretch           = TRUE
+    }
+    image {
+      function          = HLINE
+      file              = "../../assets/gtk2/Lines/h-line.png"
+      border            = { 0, 0, 0, 2 }
+      stretch           = TRUE
     }
 
-    #Lines
-
-    image
-    {
-       function         = VLINE
-       file               = "../assets/handle-v.png"
-       border             = { 0, 0, 0, 0 }
-       stretch          = TRUE
-    }
-    image
-    {
-      function        = HLINE
-      file                = "../assets/line-h.png"
-      border              = { 0, 0, 0, 0 }
-      stretch             = TRUE
-    }
 
     # Handles
 
-    image
-    {
-      function              = HANDLE
-      overlay_file          = "../assets/handle-h.png"
-      overlay_stretch       = FALSE
-      orientation             = HORIZONTAL
+image {
+      function          = HANDLE
+      state             = NORMAL
+      overlay_file      = "../../assets/gtk2/Handles/h-handle.png"
+      overlay_stretch   = FALSE
+      orientation       = HORIZONTAL
     }
-    image
-    {
-      function              = HANDLE
-      overlay_file          = "../assets/handle-v.png"
-      overlay_stretch       = FALSE
-      orientation             = VERTICAL
+    image {
+      function          = HANDLE
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Handles/h-handle-hover.png"
+      overlay_stretch   = FALSE
+      orientation       = HORIZONTAL
+    }
+    image {
+      function          = HANDLE
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Handles/h-handle-active.png"
+      overlay_stretch   = FALSE
+      orientation       = HORIZONTAL
+    }
+    image {
+      function          = HANDLE
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Handles/h-handle-insensitive.png"
+      overlay_stretch   = FALSE
+      orientation       = HORIZONTAL
+    }
+    image {
+      function          = HANDLE
+      state             = NORMAL
+      overlay_file      = "../../assets/gtk2/Handles/v-handle.png"
+      overlay_stretch   = FALSE
+      orientation       = VERTICAL
+    }
+    image {
+      function          = HANDLE
+      state             = PRELIGHT
+      overlay_file      = "../../assets/gtk2/Handles/v-handle-hover.png"
+      overlay_stretch   = FALSE
+      orientation       = VERTICAL
+    }
+    image {
+      function          = HANDLE
+      state             = ACTIVE
+      overlay_file      = "../../assets/gtk2/Handles/v-handle-active.png"
+      overlay_stretch   = FALSE
+      orientation       = VERTICAL
+    }
+    image {
+      function          = HANDLE
+      state             = INSENSITIVE
+      overlay_file      = "../../assets/gtk2/Handles/v-handle-insensitive.png"
+      overlay_stretch   = FALSE
+      orientation       = VERTICAL
     }
 
     # Expanders
 
-    image
-    {
-        function            = EXPANDER
-        expander_style    = COLLAPSED
-        file                  = "../assets/arrow-right.png"
+      image {
+      function          = EXPANDER
+      state             = NORMAL
+      expander_style    = COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = PRELIGHT
+      expander_style    = COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt-hover.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = ACTIVE
+      expander_style    = COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = INSENSITIVE
+      expander_style    = COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt-insensitive.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = NORMAL
+      expander_style    = SEMI_COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = PRELIGHT
+      expander_style    = SEMI_COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt-hover.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = ACTIVE
+      expander_style    = SEMI_COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = INSENSITIVE
+      expander_style    = SEMI_COLLAPSED
+      file              = "../../assets/gtk2/Arrows/right-alt-insensitive.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = NORMAL
+      expander_style    = EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = PRELIGHT
+      expander_style    = EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt-hover.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = ACTIVE
+      expander_style    = EXPANDED
+      file              = "../../assets/gtk2/Arrows/down.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = INSENSITIVE
+      expander_style    = EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt-insensitive.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = NORMAL
+      expander_style    = SEMI_EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = PRELIGHT
+      expander_style    = SEMI_EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt-hover.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = ACTIVE
+      expander_style    = SEMI_EXPANDED
+      file              = "../../assets/gtk2/Arrows/down.png"
+    }
+    image {
+      function          = EXPANDER
+      state             = INSENSITIVE
+      expander_style    = SEMI_EXPANDED
+      file              = "../../assets/gtk2/Arrows/down-alt-insensitive.png"
     }
 
-    image
+
+  #Sliders
+
+     image 
     {
-        function            = EXPANDER
-        expander_style    = EXPANDED
-        file                  = "../assets/arrow-down.png"
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
 
-    image
+    image 
     {
-        function          = EXPANDER
-        expander_style  = SEMI_EXPANDED
-        file                = "../assets/arrow-down.png"
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
 
-    image
-    {
-        function            = EXPANDER
-        expander_style    = SEMI_COLLAPSED
-        file                  = "../assets/arrow-right.png"
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
 
-    image
-    {
-        function            = RESIZE_GRIP
-        state                 = NORMAL
-        detail              = "statusbar"
-        overlay_file        = "../assets/null.png"
-        overlay_border    = { 0,0,0,0 }
-        overlay_stretch   = FALSE
+ image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+ image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough-insensitive.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 8, 8, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
 
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+       image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough-insensitive.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 8,8 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+
+     # Horizontal Sliders
+
+     image {
+      function        = SLIDER
+      state           = NORMAL
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider.png"
+    }
+    image {
+      function        = SLIDER
+      state           = PRELIGHT
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-hover.png"
+    }
+    image {
+      function        = SLIDER
+      state           = ACTIVE
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-active.png"
+    }
+    image {
+      function        = SLIDER
+      state           = INSENSITIVE
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-insensitive.png"
+    }
+
+
+    # Vertical Sliders
+
+    image {
+      function        = SLIDER
+      state           = NORMAL
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider.png"
+    }
+    image {
+      function        = SLIDER
+      state           = PRELIGHT
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-hover.png"
+    }
+    image {
+      function        = SLIDER
+      state           = ACTIVE
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-active.png"
+    }
+    image {
+      function        = SLIDER
+      state           = INSENSITIVE
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-insensitive.png"
+    }
+
+    # Disable active the column highlight
+    image {
+      function = FLAT_BOX
+      detail   = "cell_even_sorted"
+      state    = NORMAL
+    }
+
+    image {
+      function = FLAT_BOX
+      detail   = "cell_odd_sorted"
+      state    = NORMAL
+    }
+
+    
+    # Resize Grip
+    
+    image {
+      function          = RESIZE_GRIP
+      state             = NORMAL
+      detail            = "statusbar"
+      overlay_file      = "../../assets/gtk2/Others/null.png" 
+      overlay_border    = { 0, 0, 0, 0 }
+      overlay_stretch   = FALSE
+    }
+    
     # Shadows ( this area needs help :P )
-
-    image
-    {
-       function         = SHADOW_GAP
-       file             = "../assets/null.png"
-       border             = { 4, 4, 4, 4 }
-       stretch          = TRUE
+ 
+    image {
+      function          = SHADOW_GAP
+      file              = "../../assets/gtk2/Others/null.png"
+      border            = { 0, 0, 0, 0 }
+      stretch           = TRUE
     }
+
+    image {
+      function = SHADOW
+    }
+
   }
 }

@@ -1,250 +1,327 @@
 style "menubar"
 {
-    #bg[SELECTED] = @selected_fg_color
-
-	fg[NORMAL] = @fg_color
-	fg[SELECTED] = @selected_fg_color
+    fg[NORMAL] = @fg_color
+    fg[SELECTED] = @selected_fg_color
 
     text[PRELIGHT] = @fg_color
 
     xthickness  = 0
     ythickness  = 0
 
-    engine "pixmap"
-    {
-    image
-        {
-          function      = BOX
-          recolorable   = TRUE
-          state         = PRELIGHT
-          file          = "../assets/menubar-button.png"
-
-          border          = { 4, 4, 4, 4 }
-          stretch         = TRUE
-        }
-    }
 }
 
 style "menu"
 {
-    xthickness  = 0
-    ythickness  = 0
+    xthickness = 0
+    ythickness = 0
 
-    #GtkMenuItem::arrow-scaling  = 0.4
+    GtkMenuItem::arrow-scaling  = 0.4
+
 
     engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
 
+    image
+    {
+      function                = FLAT_BOX
+      detail                  = "menu"
+      file      ="../../assets/gtk2/Others/null.png"
+      border                  = { 3, 3, 3, 3 }
+      stretch                   = TRUE
+    }
+
     image {
       function = HLINE
-      file = "../assets/line-h.png"
+      file = "../../assets/gtk2/Lines/h-line.png"
       border = { 1, 1, 1, 1 }
       stretch = TRUE
     }
+
+
+
   }
 }
 
 style "menu_item"
 {
-    xthickness  = 2
-    ythickness  = 4
+    xthickness  = 6
+    ythickness  = 6
 
-    bg[PRELIGHT]      = @button_active
-    fg[PRELIGHT]      = @selected_fg_color
-    text[PRELIGHT]  = @selected_fg_color
+    fg[NORMAL] = @fg_color
+    fg[PRELIGHT] = @selected_fg_color
+    fg[SELECTED] = @selected_fg_color
+    text[NORMAL] = @fg_color
+    text[PRELIGHT] = @selected_fg_color
+    text[SELECTED] = @selected_fg_color
 
     GtkMenuItem::toggle-spacing = 10
     GtkMenuItem::arrow-spacing = 10
+    GtkMenuItem::horizontal-padding               = 6
+    GtkMenuItem::vertical-padding               = 6
+    GtkMenuItem::width-chars               = 12
 
     engine "pixmap"
     {
 
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      file        = "../../assets/gtk2/Menus/menuitem-hover.png"
+      border      = { 7, 7, 7, 7 }
+      stretch     = TRUE
+    } 
+    
+    image {
+      function    = BOX
+      state       = SELECTED
+      file        = "../../assets/gtk2/Menus/menuitem-hover.png"
+      border      = { 7, 7, 7, 7 }
+      stretch     = TRUE
+    }
+
     # Check Buttons
 
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = NORMAL
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked.png"
-            overlay_stretch         = TRUE  #needed for LibreOffice
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = PRELIGHT
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = ACTIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-            state                   = INSENSITIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/check-unchecked-insensitive.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-              state                   = NORMAL
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch       = TRUE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-                state                 = PRELIGHT
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = CHECK
-            recolorable             = TRUE
-                state                 = ACTIVE
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-              function              = CHECK
-            recolorable             = TRUE
-            state                     = INSENSITIVE
-            shadow                  = IN
-            overlay_file            = "../assets/check-checked-insensitive.png"
-            overlay_stretch         = TRUE
+     image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = NORMAL
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-off-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = PRELIGHT
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-off-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = ACTIVE
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-off-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = INSENSITIVE
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-off-insensitive-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = NORMAL
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-on-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = PRELIGHT
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-on-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = ACTIVE
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-on-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = INSENSITIVE
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-on-insensitive-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = NORMAL
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-mixed-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = PRELIGHT
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-mixed-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = ACTIVE
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-mixed-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = CHECK
+      recolorable     = TRUE
+      state           = INSENSITIVE
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/check-mixed-insensitive-menuitem.png"
+      overlay_stretch = FALSE
     }
 
     # Radio Buttons
 
-    image
-    {
-            function                = OPTION
-            state                   = NORMAL
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = PRELIGHT
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-unchecked.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = ACTIVE
-            shadow                  = OUT
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = OPTION
-            state                   = INSENSITIVE
-            shadow                = OUT
-            overlay_file            = "../assets/radio-unchecked-insensitive.png"
-            overlay_stretch         = FALSE
-        }
-    image
-    {
-            function                = OPTION
-              state                     = NORMAL
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = OPTION
-              state                   = PRELIGHT
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch         = TRUE
-        }
-    image
-    {
-            function                = OPTION
-              state                   = ACTIVE
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-active.png"
-            overlay_stretch       = TRUE
-        }
-    image
-    {
-            function                = OPTION
-              state                     = INSENSITIVE
-            shadow                  = IN
-            overlay_file            = "../assets/radio-checked-insensitive.png"
-            overlay_stretch         = TRUE
-        }
-    image
-        {
-            function        = SHADOW # This fixes boxy Qt menu items
-              file        = "../assets/null.png"
-              border      = { 10, 10, 10, 10 }
-              stretch     = TRUE
-        }
+    image {
+      function        = OPTION
+      state           = NORMAL
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-off-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = PRELIGHT
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-off-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = ACTIVE
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-off-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = INSENSITIVE
+      shadow          = OUT
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-off-insensitive-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = NORMAL
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-on-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = PRELIGHT
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-on-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = ACTIVE
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-on-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = INSENSITIVE
+      shadow          = IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-on-insensitive-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = NORMAL
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-mixed-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = PRELIGHT
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-mixed-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = ACTIVE
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-mixed-hover-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function        = OPTION
+      state           = INSENSITIVE
+      shadow          = ETCHED_IN
+      overlay_file    = "../../assets/gtk2/Check-Radio/radio-mixed-insensitive-menuitem.png"
+      overlay_stretch = FALSE
+    }
+    
+    # This fixes boxy Qt menu items
+    image {
+      function = SHADOW
+      file      = "../../assets/gtk2/Others/null.png" 
+      border  = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+
 
     # Arrow Buttons
 
-    image
-    {
-      function              = ARROW
-      state                   = NORMAL
-      overlay_file          = "../assets/menu-arrow.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = RIGHT
+  image {
+      function        = ARROW
+      state           = NORMAL
+      overlay_file     = "../../assets/gtk2/Arrows/right-alt.png"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
     }
-    image
-    {
-      function              = ARROW
-      state                   = PRELIGHT
-      overlay_file          = "../assets/menu-arrow-selected.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = RIGHT
+    image {
+      function        = ARROW
+      state           = PRELIGHT
+      overlay_file     = "../../assets/gtk2/Arrows/right-alt-hover.png"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
     }
-    image
-    {
-      function              = ARROW
-      state                   = INSENSITIVE
-      overlay_file          = "../assets/menu-arrow-insensitive.png"
-      overlay_border        = { 0, 0, 0, 0 }
-      overlay_stretch       = FALSE
-      arrow_direction       = RIGHT
+    image {
+      function        = ARROW
+      state           = INSENSITIVE
+      overlay_file     = "../../assets/gtk2/Arrows/right-alt-insensitive.png"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
     }
+
+
  }
 }
 
 style "menubar_item"
 {
-    xthickness  = 2
-    ythickness  = 2
+    xthickness = 3
+    ythickness = 6
     bg[PRELIGHT]    = @selected_fg_color
     fg[PRELIGHT]    = @selected_fg_color
+
+      engine "pixmap" {
+    image {
+      function    = BOX
+      recolorable = TRUE
+      state       = PRELIGHT
+      file        = "../../assets/gtk2/Others/top.png"
+      border      = { 0, 0, 0, 2 }
+      stretch     = TRUE
+    }
+  }
+
 }
 
 style "menu_framed_box" #this is not needed in Gnome
@@ -255,23 +332,78 @@ style "menu_framed_box" #this is not needed in Gnome
      {
         function                = BOX
         detail                  = "menu"
-        file                          = "../assets/frame.png"
+        file      ="../../assets/gtk2/Others/menu-bg.png"
         border                  = { 3, 3, 3, 3 }
         stretch                   = TRUE
      }
     }
 }
 
+style "menubar_item_label" {
+ 
+
+}
+
 style "separator_menu_item"
 {
+  xthickness = 0
+  ythickness = 2
+
     engine "pixmap"
     {
-        image
-        {
-            function            = BOX
-              file              = "../assets/line-h.png"
-              border            = { 0, 0, 0, 0 }
-              stretch         = TRUE
+        image {
+            function  = BOX
+            file      = "../../assets/gtk2/Lines/menu-line-ltr.png"
+            border    = { 20, 0, 0, 0 }
+            stretch   = TRUE
+            direction = LTR
+        }
+        image {
+            function  = BOX
+            file      = "../../assets/gtk2/Lines/menu-line-rtl.png"
+            border    = { 0, 20, 0, 0 }
+            stretch   = TRUE
+            direction = RTL
         }
     }
+}
+
+style "menu_item_label" {
+
+    fg[NORMAL] = @fg_color
+    fg[PRELIGHT] = @selected_fg_color
+    fg[SELECTED] = @selected_fg_color
+    text[NORMAL] = @fg_color
+    text[PRELIGHT] = @selected_fg_color
+    text[SELECTED] = @selected_fg_color
+
+}
+
+
+style "menu_frame" {
+
+    xthickness = 6
+    ythickness = 6
+    
+
+  engine "pixmap" {
+    
+    image
+    {
+      function                = FLAT_BOX
+      detail                  = "menu"
+      file      ="../../assets/gtk2/Others/null.png"
+      border                  = { 3, 3, 3, 3 }
+      stretch                   = TRUE
+    }
+
+
+
+    image {
+      function = BOX
+      file      ="../../assets/gtk2/Others/menu-bg.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+  }
 }

@@ -1,26 +1,105 @@
 class "GtkWidget"                   style "default"
 class "GtkScrollbar"                style "scrollbar"
 class "GtkButton"                   style "button"
-class "GtkEntry"                    style "entry"
+class "GtkEntry"                    style : rc "entry"
 class "GtkOldEditable"              style "entry"
-class "GtkSpinButton"               style "spinbutton"
-class "GtkNotebook"                 style "notebook"
+class "GtkSpinButton"               style : rc "spinbutton"
+class "GtkNotebook"                 style : rc "notebook"
 class "GtkRange"                    style "range"
 class "GtkProgressBar"              style "progressbar"
 class "GtkSeparatorMenuItem"        style "separator_menu_item"
 class "GtkScrolledWindow"           style "scrolled_window"
 class "GtkFrame"                    style "frame"
 class "GtkToolButton"               style "toolbuttons"
+class "GtkLinkButton"               style "link_button"
 class "ChromeGtkFrame"              style "chrome-gtk-frame"
 class "GtkToggleButton"             style "togglebutton"
+class "GtkMenu"                     style "menu"
+class "GtkHScale"                   style "scale_horz"
+class "GtkVScale"                   style "scale_vert"
+class "GtkOptionMenu"               style "combobox_button"
+class "GtkTextView"                 style "textview"
+
+
+
+widget_class "*<GtkLabel>"    style "text"
+widget_class "*<GtkCellView>" style "text"
+
+widget_class "*<GtkButton>*<GtkLabel>"                      style "button_label"
+widget_class "*<GtkComboBox>*<GtkButton>*<GtkLabel>"        style "misc_button_label"
+widget_class "*<GtkCombo>*<GtkButton>*<GtkLabel>"           style "misc_button_label"
+widget_class "*<GtkFontButton>*<GtkLabel>"                  style "misc_button_label"
+widget_class "*<GtkSpinButton>*<GtkLabel>"                  style "misc_button_label"
+widget_class "*<GtkCheckButton>*<GtkLabel>"                 style "misc_button_label"
+
+
 
 widget_class "*<GtkMenuBar>*"                               style "menubar"
+widget_class "*<GtkMenu>"                                   style "menu_frame"
 widget_class "*<GtkMenu>*"                                  style "menu"
-widget_class "*<GtkMenu>*"                                  style "menu_framed_box"
 widget_class "*<GtkMenuItem>*"                              style "menu_item"
+widget_class "*<GtkMenuItem>*<GtkLabel>"                    style "menu_item_label"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"                 style "menubar_item"
+widget_class "*<GtkMenuBar>.<GtkMenuItem>*<GtkLabel>"       style "menubar_item_label"
+widget_class "*<GtkMenu>*<GtkSeparatorMenuItem>"            style "separator_menu_item"
+
+widget_class "*<GtkComboBox>*<GtkButton>"                   style  : rc  "combobox_button"
+widget_class "*<GtkComboBoxEntry>*<GtkEntry>"               style : rc "combobox_entry"
+widget_class "*<GtkComboBoxEntry>*<GtkButton>"              style : rc "combobox_entry_button"
+widget_class "*<GtkCombo>*<GtkEntry>"                       style : rc "combobox_entry"
+widget_class "*<GtkCombo>*<GtkButton>"                      style : rc "combobox_entry_button"
+
+# A hack for inline-progress widget inside the GtkTreeView
+widget_class "*<GtkTreeView>"                                   style : rc "inline_progress"
+
+
+widget_class "*HandleBox"                                       style "toolbar"
+widget_class "*<GtkTreeView>*<GtkButton>*"                      style : rc"treeview_header"
+widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"            style "inline_toolbar"
+widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>" style "notebook_viewport"
+
+# FIXME: needs for Inkskape's scrolled colour palette
+widget_class "*<GtkScrolledWindow>*<GtkViewport>"               style "scrolled_viewport"
+
+widget_class "*<GtkComboBox>*<GtkSeparator>"                    style "button_separator"
+widget_class "*<GtkFontButton>*<GtkSeparator>"                  style "button_separator"
+widget_class "*<GtkFileChooserButton>*<GtkSeparator>"           style "button_separator"
+
+widget_class "*<GtkSpinButton>*"  style "bg"
+widget_class "*<GtkCheckButton>*" style "bg"
+widget_class "*<GtkExpander>*"    style "bg"
+widget_class "*<GtkNotebook>*<GtkSpinButton>"                style "base"
+widget_class "*<GtkNotebook>*<GtkCheckButton>"               style "button_check_radio"
+widget_class "*<GtkNotebook>*<GtkViewport>*<GtkCheckButton>" style "view_button_check_radio"
+widget_class "*<GtkNotebook>*<GtkExpander>"                  style "base"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkSpinButton>"  style "bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkCheckButton>" style "bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkExpander>"    style "bg"
+
+widget_class "*<GtkToolbar>*<GtkButton>"            style  : rc "flat_button"
+widget_class "*<GtkToolbar>*<GtkButton>*<GtkLabel>" style : rc "button_label"
+widget_class "*<GtkPathBar>*<GtkButton>"            style : rc "button"
+widget_class "*<GtkPathBar>*<GtkButton>*<GtkLabel>" style : rc "button_label"
+
+widget_class "*<GtkNotebook>*<GtkEntry>"               style "notebook_entry"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkEntry>" style "entry"
+
+widget_class "*<GtkNotebook>*<GtkComboBoxEntry>*<GtkEntry>"               style "combobox_entry"
+widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkComboBoxEntry>*<GtkEntry>"  style "combobox_entry"
+
+widget_class "<GtkEntry>" style "standalone_entry"
+
+widget_class "*<GtkNotebook>.<GtkWidget>.<GtkLabel>"          style "notebook_tab_label"
+widget_class "*<GtkNotebook>.<GtkWidget>.<GtkBox>.<GtkLabel>" style "notebook_tab_label"
+
+# Disable white text shadows
+widget_class "*<GtkLabel>"                                         style "disable_text_shadow"
+widget_class "*<GtkCellView>"                                      style "disable_text_shadow"
+
+# GTK tooltips
+widget "gtk-tooltip*" style "tooltips"
+
 widget_class "*Nautilus*ToolBar*"                           style "toolbar"
-widget_class "*HandleBox"                                   style "toolbar"
 widget_class "*BonoboDockItem"                              style "toolbar"
 widget_class "*HandleBox"                                   style "toolbar"
 widget_class "*<GtkToolbar>"                                style "toolbar"
@@ -28,19 +107,16 @@ widget_class "*.<GtkTreeView>*"                             style "treeview"
 widget_class "*Tool*GtkButton"                              style "toolbuttons"
 widget_class "*Tool*GtkToggleButton"                        style "tooltoggle_buttons"
 widget_class "*<GtkToggleToolButtton>*"                     style "tooltoggle_buttons"
-widget_class "*<GtkButton>*<GtkLabel>"                      style "button_label"
+
 widget_class "*.<GtkComboBox>.<GtkCellView>"                style "button_label"
-widget_class "*<GtkComboBox>*"                              style "button"
-widget_class "*<GtkComboBox>*<GtkSeparator>"                style "combobox_separator"
+
 widget_class "*<GtkComboBox>.<GtkButton>*<GtkSeparator>"    style "combobox_separator"
+widget_class "*<GtkComboBox>*<GtkSeparator>"                style "button_separator"
 widget_class "*<GtkComboBoxEntry>*"                         style "combobox_entry"
-widget_class "*<GtkComboBoxEntry>*<GtkButton>"              style "combobox_entry_button"
-widget_class "*<GtkCombo>*"                                 style "combobox_entry"
-widget_class "*<GtkCombo>.<GtkButton>"                      style "combobox_entry_button"
+
 widget_class "*<GtkFileChooserDialog>*GtkToggleButton*"     style "toolbuttons"
 widget_class "*<GtkFileChooserDialog>*GtkComboBox*"         style "button"
 widget_class "*<GtkNotebook>.<GtkLabel>"                    style "notebook_tab_label"
-widget "gtk-tooltip*"                                       style "tooltips"
 
 # Xchat special cases
 widget "*xchat-inputbox"                                    style "entry"
@@ -49,4 +125,4 @@ widget "*xchat-inputbox"                                    style "entry"
 widget_class "*Chrom*Button*"       style "button"
 widget "*swt*toolbar*"              style "toolbuttons"
 
-class "GtkWindow"                                                   style "toplevel_hack"
+class "GtkWindow" style "toplevel_hack"

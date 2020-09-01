@@ -1,108 +1,374 @@
 style "range"
 {
+  xthickness=0
+  ythickness=0
   engine "pixmap"
   {
-    image
+
+    image 
     {
-      function			= BOX
-      detail			  = "trough"
-      file			    = "../assets/scale-trough-horizontal.png"
-      border			  = { 4, 4, 0, 0 }
-      stretch			  = TRUE
-      orientation		= HORIZONTAL
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
-    image
+
+    image 
     {
-      function			= BOX
-      detail			  = "trough"
-      file			    = "../assets/scale-trough-vertical.png"
-      border			  = { 0, 0, 4, 4 }
-      stretch			  = TRUE
-      orientation		= VERTICAL
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
+
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+
+ image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+ image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough-insensitive.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+       image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough-insensitive.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
 
     # Horizontal
 
-    image
-    {
-      function				= SLIDER
+     image {
+      function        = SLIDER
       state           = NORMAL
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider.png"
-      overlay_stretch	= FALSE
-      orientation			= HORIZONTAL
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider.png"
     }
-    image
-    {
-      function				= SLIDER
+    image {
+      function        = SLIDER
       state           = PRELIGHT
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider-active.png"
-      overlay_stretch	= FALSE
-      orientation			= HORIZONTAL
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-hover.png"
     }
-    image
-    {
-      function				= SLIDER
+    image {
+      function        = SLIDER
+      state           = ACTIVE
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-active.png"
+    }
+    image {
+      function        = SLIDER
       state           = INSENSITIVE
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider.png"
-      overlay_stretch	= FALSE
-      orientation			= HORIZONTAL
+      detail          = "hscale"
+      file            = "../../assets/gtk2/Range/scale-h-slider-insensitive.png"
     }
 
     # Vertical
 
-    image
-    {
-      function				= SLIDER
+    image {
+      function        = SLIDER
       state           = NORMAL
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider.png"
-      overlay_stretch	= FALSE
-      orientation			= VERTICAL
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider.png"
     }
-    image
-    {
-      function				= SLIDER
+    image {
+      function        = SLIDER
       state           = PRELIGHT
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider-active.png"
-      overlay_stretch	= FALSE
-      orientation			= VERTICAL
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-hover.png"
     }
-		
-    image
-    {
-      function				= SLIDER
+    image {
+      function        = SLIDER
+      state           = ACTIVE
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-active.png"
+    }
+    image {
+      function        = SLIDER
       state           = INSENSITIVE
-      file				    = "../assets/null.png"
-      border				  = { 0, 0, 0, 0 }
-      stretch				  = TRUE
-      overlay_file		= "../assets/scale-slider.png"
-      overlay_stretch	= FALSE
-      orientation			= VERTICAL
+      detail          = "vscale"
+      file            = "../../assets/gtk2/Range/scale-v-slider-insensitive.png"
     }
-	# Function below removes ugly boxes
 
+	# Function below removes ugly boxes
 	image
       	{
         	function		= BOX
-		      file        = "../assets/null.png"
-		      border      = { 3, 3, 3, 3 }
+          file        = "../../assets/gtk2/Others/null.png" 
+      border   = { 0, 0, 0, 0 }
 		      stretch     = TRUE
       	}
-
   }
 }
 
+
+
+style "scale_horz" = "range" {
+  engine "pixmap" {
+       image 
+    {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+
+    image 
+    {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+
+ image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough-active.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+ image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/h-scale-trough-insensitive.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/h-scale-trough.png"
+      border      = { 4, 4, 0, 0 }
+      stretch     = TRUE
+    }
+  }
+}
+
+style "scale_vert"  = "range" {
+  engine "pixmap" {
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = NORMAL
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+
+       image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = PRELIGHT
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+
+
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = ACTIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough-active.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-upper"
+      file        = "../../assets/gtk2/Range/v-scale-trough-insensitive.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough-lower"
+      file        = "../../assets/gtk2/Range/v-scale-trough.png"
+      border      = { 0, 0, 4, 4 }
+      stretch     = TRUE
+    }
+  }
+}

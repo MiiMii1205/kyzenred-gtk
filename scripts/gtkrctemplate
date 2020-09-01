@@ -1,0 +1,42 @@
+# Theme:       Kyzenred
+# Description: A full KDE theme based on gamer aesthetics and modern minimalism (GTK themes and assets)
+
+####################DISCLAIMER###################
+#   This file was generated {{timestamp}}    
+#   Any changes to it won't be permanent.       #       
+#################################################
+
+gtk-color-scheme = "text_color:{{text}}"
+gtk-color-scheme = "base_color:{{base}}"
+gtk-color-scheme = "insensitive_base_color:{{base-disabled}}"
+gtk-color-scheme = "fg_color:{{foreground}}"
+gtk-color-scheme = "bg_color:{{background}}"
+gtk-color-scheme = "insensitive_bg_color:{{background-disabled}}"
+gtk-color-scheme = "selected_fg_color:{{selected-text}}"
+gtk-color-scheme = "selected_bg_color:{{selected-background}}"
+gtk-color-scheme = "button_fg_color:{{button-text}}"
+gtk-color-scheme = "tooltip_fg_color:{{foreground}}"
+gtk-color-scheme = "tooltip_bg_color:{{background}}"
+gtk-color-scheme = "insensitive_fg_color:{{foreground-disabled}}"
+gtk-color-scheme = "insensitive_text_color:{{text-disabled}}"
+gtk-color-scheme = "button_insensitive_fg_color:{{button-text-disabled}}"
+gtk-color-scheme = "button_active:{{button-active}}"
+gtk-color-scheme = "border_color:{{button-hover}}"
+gtk-color-scheme = "link_color:{{link}}"
+gtk-color-scheme = "visited_link_color:{{link-visited}}"
+gtk-color-scheme = "inactive_notebook_bg:{{inactive-tab}}"
+gtk-color-scheme = "inactive_notebook_borders:{{inactive-tab-borders}}"
+gtk-color-scheme = "base_color_alt:{{base-color-alt}}"
+
+
+include "widgets/default"
+include "widgets/buttons"
+include "widgets/menu"
+include "widgets/entry"
+include "widgets/notebook"
+include "widgets/range"
+include "widgets/scrollbar"
+include "widgets/toolbar"
+include "widgets/progressbar"
+include "widgets/misc"
+include "widgets/styles"

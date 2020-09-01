@@ -1,7 +1,8 @@
 style "progressbar" {
   xthickness              = 0
   ythickness              = 0
-  
+
+  fg[NORMAL] = @fg_color
   fg[PRELIGHT] = @selected_fg_color
 
   engine "pixmap"
@@ -10,8 +11,8 @@ style "progressbar" {
     {
       function    = BOX
       detail      = "trough"
-      file        = "../assets/progressbar-trough.png"
-      border      = { 4, 4, 4, 4 }
+      file        = "../../assets/gtk2/ProgressBar/trough.png"
+      border      = { 2, 2, 2, 2 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -19,17 +20,17 @@ style "progressbar" {
     {
       function    = BOX
       detail      = "bar"
-      file        = "../assets/progressbar-bar.png"
+      file        = "../../assets/gtk2/ProgressBar/bar.png"
       stretch     = TRUE
-      border      = { 4, 4, 4, 4 }
+      border      = { 2, 2, 2, 2 }
       orientation = HORIZONTAL
     }
     image
     {
       function    = BOX
       detail      = "trough"
-      file        = "../assets/progressbar-trough.png"
-      border      = { 4, 4, 4, 4 }
+      file        = "../../assets/gtk2/ProgressBar/trough.png"
+      border      = { 2, 2, 2, 2 }
       stretch     = TRUE
       orientation = VERTICAL
     }
@@ -37,11 +38,16 @@ style "progressbar" {
     {
       function    = BOX
       detail      = "bar"
-      file        = "../assets/progressbar-bar.png"
+      file        = "../../assets/gtk2/ProgressBar/bar.png"
       stretch     = TRUE
-      border      = { 4, 4, 4, 4 }
+      border      = { 2, 2, 2, 2 }
       orientation = VERTICAL
     }
   }
 }
 
+style "inline_progress" {
+  # do not set normal state background
+  # bg[NORMAL] = mix(0.2, @selected_bg_color, @base_color)
+  bg[SELECTED] = mix(0.8, @selected_bg_color, @fg_color) # progress
+}

@@ -2,116 +2,123 @@ style "scrollbar"
 {
   engine "pixmap"
   {
-      image
-    {
-      function      = BOX
-      detail        = "trough"
-      file          = "../assets/scrollbar-trough-horizontal.png"
-      border        = { 25,25, 7, 7 }   #large borders while LibreOffice won't use GtkScrollbar::stepper-spacing=1
-      stretch       = TRUE
-      orientation   = HORIZONTAL
+
+     image {
+      function    = BOX
+      # state     = NORMAL
+      detail      = "trough"
+      file        = "../../assets/gtk2/Scrollbars/h-trough.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
-    image
-    {
-      function      = BOX
-      detail        = "trough"
-      file          = "../assets/scrollbar-trough-vertical.png"
-      border        = { 7, 7, 25, 25 }
-      stretch       = TRUE
-      orientation   = VERTICAL
+
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough"
+      file        = "../../assets/gtk2/Scrollbars/h-trough.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+    
+    image {
+      function    = BOX
+      # state     = NORMAL
+      detail      = "trough"
+      file        = "../../assets/gtk2/Scrollbars/v-trough.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = BOX
+      state       = INSENSITIVE
+      detail      = "trough"
+      file        = "../../assets/gtk2/Scrollbars/v-trough.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
     }
     
 # Sliders
 
-  image
-    {
-      function      = SLIDER
-      state         = NORMAL
-      file          = "../assets/scrollbar-slider-horizontal.png"
-      border        = { 5, 5, 5, 5 }
-      stretch       = TRUE
-      orientation   = HORIZONTAL
-
+  image {
+      function    = SLIDER
+      state       = NORMAL
+      file        = "../../assets/gtk2/Scrollbars/v-slider.png" 
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
-  image
-    {
-      function      = SLIDER
-      state         = ACTIVE
-      file          = "../assets/scrollbar-slider-horizontal-hover.png"
-      border        = { 5, 5, 5, 5 }
-      stretch       = TRUE
-      orientation   = HORIZONTAL
-
+    image {
+      function    = SLIDER
+      state       = PRELIGHT
+      file        = "../../assets/gtk2/Scrollbars/v-slider-hover.png" 
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
-    image
-    {
-      function      = SLIDER
-      state         = PRELIGHT
-      file          = "../assets/scrollbar-slider-horizontal-hover.png"
-      border        = { 5, 5, 5, 5 }
-      stretch       = TRUE
-      orientation   = HORIZONTAL
-
-    }
-    image
-    {
-      function      = SLIDER
-      state         = INSENSITIVE
-      file          = "../assets/scrollbar-slider-horizontal.png"
-      border        = { 5, 5, 5, 5 }
-      stretch       = TRUE
-      orientation   = HORIZONTAL
-
-    }
-
-# X Verticals
-
- image
-    {
-      function        = SLIDER
-      state           = NORMAL
-      file            = "../assets/scrollbar-slider-vertical.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      orientation     = VERTICAL
-      
-    }
-   image
-    {
-      function        = SLIDER
-      state           = ACTIVE
-      file            = "../assets/scrollbar-slider-vertical-hover.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      orientation     = VERTICAL
-
-    }
-    image
-    {
-      function        = SLIDER
-      state           = PRELIGHT
-      file            = "../assets/scrollbar-slider-vertical-hover.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      orientation     = VERTICAL
-
-    }
-    image
-    {
-      function        = SLIDER
-      state           = INSENSITIVE
-      file            = "../assets/scrollbar-slider-vertical.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      orientation     = VERTICAL
-
+    image {
+      function    = SLIDER
+      state       = ACTIVE
+      file        = "../../assets/gtk2/Scrollbars/v-slider-active.png" 
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
     }
     image 
     {
+      function    = SLIDER
+      state       = INSENSITIVE
+      file        = "../../assets/gtk2/Scrollbars/v-slider-insensitive.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = HORIZONTAL
+    }
+
+
+# X Verticals
+
+  image {
+      function    = SLIDER
+      state       = NORMAL
+      file        = "../../assets/gtk2/Scrollbars/v-slider.png" 
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = SLIDER
+      state       = PRELIGHT
+      file        = "../../assets/gtk2/Scrollbars/v-slider-hover.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = SLIDER
+      state       = ACTIVE
+      file        = "../../assets/gtk2/Scrollbars/v-slider-active.png" 
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+    image {
+      function    = SLIDER
+      state       = INSENSITIVE
+      file        = "../../assets/gtk2/Scrollbars/v-slider-insensitive.png"
+      border      = { 4, 4, 4, 4 }
+      stretch     = TRUE
+      orientation = VERTICAL
+    }
+
+    image 
+    {
       function        = STEPPER
-      file            = "../assets/null.png"
+      file                      = "../../assets/gtk2/Others/null.png" 
       stretch         = TRUE
-      
     }
   }
 }

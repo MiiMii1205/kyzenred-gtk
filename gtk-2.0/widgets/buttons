@@ -1,7 +1,7 @@
-style "button"
+style "button" = "button_label"
 {
-  xthickness  = 4
-  ythickness  = 5
+  xthickness  = 0
+  ythickness  = 0
 
   engine "pixmap"
   {
@@ -9,36 +9,34 @@ style "button"
     {
       function      = BOX
       state         = NORMAL
-      file          = "../assets/button.png"
-      border        = {4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
     {
       function      = BOX
       state         = PRELIGHT
-      file          = "../assets/button-hover.png"
-      border        = { 4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button-hover.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
     {
       function      = BOX
       state         = ACTIVE
-      file          = "../assets/button-active.png"
-      border        = { 4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button-active.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
    {
      function       = BOX
      state          = INSENSITIVE
-     file           = "../assets/button-insensitive.png"
-     border         = { 4, 4, 4, 4 }
+     file           = "../../assets/gtk2/Buttons/button-insensitive.png"
+      border        = {7, 7, 7, 7}
      stretch        = TRUE
     }
-
-
 
     # Arrows
 
@@ -46,7 +44,7 @@ style "button"
     {
       function              = ARROW
       state                   = NORMAL
-      overlay_file          = "../assets/arrow-up.png"
+      overlay_file          = "../../assets/gtk2/Arrows/up.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = UP
@@ -55,7 +53,7 @@ style "button"
     {
       function              = ARROW
       state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-up.png"
+      overlay_file          = "../../assets/gtk2/Arrows/up.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = UP
@@ -64,7 +62,7 @@ style "button"
     {
       function              = ARROW
       state                   = ACTIVE
-      overlay_file          = "../assets/arrow-up.png"
+      overlay_file          = "../../assets/gtk2/Arrows/up.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = UP
@@ -73,7 +71,7 @@ style "button"
     {
       function              = ARROW
       state                   = INSENSITIVE
-      overlay_file          = "../assets/arrow-up-insensitive.png"
+      overlay_file          = "../../assets/gtk2/Arrows/up-insensitive.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = UP
@@ -83,7 +81,7 @@ style "button"
     {
     function                = ARROW
       state                   = NORMAL
-      overlay_file          = "../assets/arrow-down.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = DOWN
@@ -92,7 +90,7 @@ style "button"
     {
       function              = ARROW
       state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-down.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = DOWN
@@ -101,7 +99,7 @@ style "button"
     {
       function              = ARROW
       state                   = ACTIVE
-      overlay_file          = "../assets/arrow-down.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = DOWN
@@ -111,7 +109,7 @@ style "button"
     {
       function              = ARROW
       state                   = INSENSITIVE
-      overlay_file          = "../assets/arrow-down-insensitive.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down-insensitive.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = DOWN
@@ -121,7 +119,7 @@ style "button"
     {
       function              = ARROW
       state                   = NORMAL
-      overlay_file          = "../assets/arrow-left.png"
+      overlay_file          = "../../assets/gtk2/Arrows/left.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
       arrow_direction       = LEFT
@@ -130,7 +128,7 @@ style "button"
     {
         function                = ARROW
         state                   = PRELIGHT
-        overlay_file          = "../assets/arrow-left.png"
+        overlay_file          = "../../assets/gtk2/Arrows/left.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = LEFT
@@ -139,7 +137,7 @@ style "button"
     {
         function                = ARROW
         state                   = ACTIVE
-        overlay_file          = "../assets/arrow-left.png"
+        overlay_file          = "../../assets/gtk2/Arrows/left.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = LEFT
@@ -148,7 +146,7 @@ style "button"
     {
         function                = ARROW
         state                   = INSENSITIVE
-        overlay_file          = "../assets/arrow-left-insensitive.png"
+        overlay_file          = "../../assets/gtk2/Arrows/left-insensitive.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = LEFT
@@ -158,7 +156,7 @@ style "button"
     {
         function                = ARROW
         state                     = NORMAL
-        overlay_file          = "../assets/arrow-right.png"
+        overlay_file          = "../../assets/gtk2/Arrows/right.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = RIGHT
@@ -167,7 +165,7 @@ style "button"
     {
         function                = ARROW
         state                   = PRELIGHT
-        overlay_file          = "../assets/arrow-right.png"
+        overlay_file          = "../../assets/gtk2/Arrows/right.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = RIGHT
@@ -176,7 +174,7 @@ style "button"
     {
         function                = ARROW
         state                   = ACTIVE
-        overlay_file          = "../assets/arrow-right.png"
+        overlay_file          = "../../assets/gtk2/Arrows/right.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = RIGHT
@@ -185,27 +183,47 @@ style "button"
     {
         function                = ARROW
         state                   = INSENSITIVE
-        overlay_file          = "../assets/arrow-right-insensitive.png"
+        overlay_file          = "../../assets/gtk2/Arrows/right-insensitive.png"
         overlay_border      = { 0, 0, 0, 0 }
         overlay_stretch     = FALSE
         arrow_direction     = RIGHT
     }
 
 
+    image
+    {
+      function        = BOX
+      detail          = "entry"
+      state           = NORMAL
+      shadow   = IN
+      file            ="../../assets/gtk2/Buttons/button.png"
+      border          = { 7, 7, 7, 7 }
+      stretch         = TRUE
+    }
 
+      image
+    {
+      function        = BOX
+      detail          = "entry"
+      state           = NORMAL
+      shadow   = IN
+      file            ="../../assets/gtk2/Buttons/button.png"
+      border          = { 7, 7, 7, 7 }
+      stretch         = TRUE
+    }
 
     image
     {
       function            = TAB
       state                 = INSENSITIVE
-      overlay_file        = "../assets/arrow-down-insensitive.png"
+      overlay_file        = "../../assets/gtk2/Arrows/down-insensitive.png"
       overlay_stretch     = FALSE
     }
     image
     {
       function              = TAB
       state                   = NORMAL
-      overlay_file          = "../assets/arrow-down.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
     }
@@ -213,17 +231,17 @@ style "button"
     {
       function              = TAB
       state                   = PRELIGHT
-      overlay_file          = "../assets/arrow-down.png"
+      overlay_file          = "../../assets/gtk2/Arrows/down.png"
       overlay_border        = { 0, 0, 0, 0 }
       overlay_stretch       = FALSE
     }
   }
 }
 
-style "togglebutton"
+style "togglebutton" = "button"
 {
-  xthickness  = 4
-  ythickness  = 5
+  xthickness  = 0
+  ythickness  = 0
 
   engine "pixmap"
   {
@@ -231,44 +249,306 @@ style "togglebutton"
     {
       function      = BOX
       state         = NORMAL
-      file          = "../assets/togglebutton.png"
-      border        = {4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
     {
       function      = BOX
       state         = PRELIGHT
-      file          = "../assets/togglebutton-hover.png"
-      border        = { 4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button-hover.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
     {
       function      = BOX
       state         = ACTIVE
-      file          = "../assets/togglebutton-active.png"
-      border        = { 4, 4, 4, 4 }
+      file          = "../../assets/gtk2/Buttons/button-active.png"
+      border        = {7, 7, 7, 7}
       stretch       = TRUE
     }
     image
    {
      function       = BOX
      state          = INSENSITIVE
-     file           = "../assets/togglebutton-insensitive.png"
-     border         = { 4, 4, 4, 4 }
+     file           = "../../assets/gtk2/Buttons/button-insensitive.png"
+      border        = {7, 7, 7, 7}
      stretch        = TRUE
     }
   }
 }
 
-style "spinbutton" = "default"
+
+
+style "spinbutton" = "button"{
+  xthickness = 4
+  ythickness = 7
+
+  base[INSENSITIVE] = @bg_color
+
+  engine "pixmap" {
+
+       image
+    {
+      function      = SHADOW
+      detail          = "entry"
+      state         = NORMAL
+      file          = "../../assets/gtk2/Buttons/button.png"
+      border        = {7, 7, 7, 7}
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = SHADOW
+      detail          = "entry"
+      state         = PRELIGHT
+      file          = "../../assets/gtk2/Buttons/button.png"
+      border        = {7, 7, 7, 7}
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = SHADOW
+      detail          = "entry"
+      state         = ACTIVE
+      file          = "../../assets/gtk2/Buttons/button.png"
+      border        = {7, 7, 7, 7}
+      stretch       = TRUE
+    }
+    image
+   {
+     function       = SHADOW
+      detail          = "entry"
+     state          = INSENSITIVE
+     file           = "../../assets/gtk2/Buttons/button-insensitive.png"
+      border        = {7, 7, 7, 7}
+     stretch        = TRUE
+    }
+
+       image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = NORMAL
+      file            ="../../assets/gtk2/Buttons/spin-entry-bg.png"
+    }
+    image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = ACTIVE
+      file            ="../../assets/gtk2/Buttons/spin-entry-bg.png"
+    }
+    image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = INSENSITIVE
+      file            ="../../assets/gtk2/Buttons/spin-entry-bg-insensitive.png"
+    }
+
+
+    image {
+      function = ARROW
+    }
+
+    # Spin-Up LTR
+    image {
+      function        = BOX
+      state           = NORMAL
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/ltr-up.png"
+      border          = { 1, 6, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = PRELIGHT
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/ltr-up-hover.png"
+      border          = { 1, 6, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = ACTIVE
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/ltr-up-active.png"
+      border          = { 1, 6, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = INSENSITIVE
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/ltr-up-insensitive.png"
+      border          = { 1, 6, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up-insensitive.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+
+    # Spin-Up RTL
+    image {
+      function        = BOX
+      state           = NORMAL
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/rtl-up.png"
+      border          = { 6, 1, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image {
+      function        = BOX
+      state           = PRELIGHT
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/rtl-up-hover.png"
+      border          = { 6, 1, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image
+    {
+      function        = BOX
+      state           = ACTIVE
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/rtl-up-active.png"
+      border          = { 6, 1, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image {
+      function        = BOX
+      state           = INSENSITIVE
+      detail          = "spinbutton_up"
+      file            = "../../assets/gtk2/Spin/rtl-up-insensitive.png"
+      border          = { 6, 1, 6, 0 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/up-insensitive.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+
+    # Spin-Down LTR
+    image {
+      function        = BOX
+      state           = NORMAL
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/ltr-down.png"
+      border          = { 1, 6, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = PRELIGHT
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/ltr-down-hover.png"
+      border          = { 1, 6, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = ACTIVE
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/ltr-down-active.png"
+      border          = { 1, 6, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+    image {
+      function        = BOX
+      state           = INSENSITIVE
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/ltr-down-insensitive.png"
+      border          = { 1, 6, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down-insensitive.png"
+      overlay_stretch = FALSE
+      direction       = LTR
+    }
+
+    # Spin-Down RTL
+    image {
+      function        = BOX
+      state           = NORMAL
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/rtl-down.png"
+      border          = { 6, 1, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image {
+      function        = BOX
+      state           = PRELIGHT
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/rtl-down-hover.png"
+      border          = { 6, 1, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image {
+      function        = BOX
+      state           = ACTIVE
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/rtl-down-active.png"
+      border          = { 6, 1, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+    image {
+      function        = BOX
+      state           = INSENSITIVE
+      detail          = "spinbutton_down"
+      file            = "../../assets/gtk2/Spin/rtl-down-insensitive.png"
+      border          = { 6, 1, 1, 6 }
+      stretch         = TRUE
+      overlay_file    = "../../assets/gtk2/Arrows/down-insensitive.png"
+      overlay_stretch = FALSE
+      direction       = RTL
+    }
+  }
+}
+
+
+style "spinbutton_bak" = "button"
 {
-  #bg[NORMAL] = @bg_color
+  bg[NORMAL] = @bg_color
 
   xthickness  = 3
   ythickness  = 3
-  GtkWidget::interior_focus = 1
+  # GtkWidget::interior_focus = 1
 
 engine "pixmap"
   {
@@ -277,104 +557,132 @@ engine "pixmap"
       function      = ARROW
     }
 
-  #Spin-up
-  image
-  {
-    function          = BOX
-    state             = NORMAL
-    detail            = "spinbutton_up"
-    file              = "../assets/spinbutton-up.png"
-    border            = { 5, 5, 5, 5 }
-    stretch           = TRUE
-    overlay_file      = "../assets/arrow-small-up.png"
-    overlay_stretch   = FALSE
-  }
-  image
-  {
-    function          = BOX
-    state             = PRELIGHT
-    detail            = "spinbutton_up"
-    file              = "../assets/spinbutton-up.png"
-    border            = { 5, 5, 5, 5 }
-    stretch           = TRUE
-    overlay_file      = "../assets/arrow-small-up-hover.png"
-    overlay_stretch   = FALSE
-  }
-  image
-  {
-    function          = BOX
-    state             = INSENSITIVE
-    detail            = "spinbutton_up"
-    file              = "../assets/spinbutton-up-insensitive.png"
-    border            = { 5, 5, 5, 5 }
-    stretch           = TRUE
-    overlay_file      = "../assets/arrow-small-up-insensitive.png"
-    overlay_stretch   = FALSE
-  }
-  image
-  {
-    function          = BOX
-    state             = ACTIVE
-    detail            = "spinbutton_up"
-    file              = "../assets/spinbutton-up.png"
-    border            = { 5, 5, 5, 5 }
-    stretch           = TRUE
-    overlay_file      = "../assets/arrow-small-up-active.png"
-    overlay_stretch   = FALSE
-  }
 
-  # Spin-Down
-    image
-    {
-      function        = BOX
-      state           = NORMAL
-      detail          = "spinbutton_down"
-      file            = "../assets/spinbutton-down.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      overlay_file    = "../assets/arrow-small-down.png"
-      overlay_stretch = FALSE
+    image {
+      function = BOX
+      state    = NORMAL
+    detail            = "spinbutton_up"
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
     }
-    image
-    {
-      function        = BOX
-      state           = PRELIGHT
-      detail          = "spinbutton_down"
-      file            = "../assets/spinbutton-down.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      overlay_file    = "../assets/arrow-small-down-hover.png"
-      overlay_stretch = FALSE
+    image {
+      function = BOX
+      state    = PRELIGHT
+    detail            = "spinbutton_up"
+      shadow   = OUT
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
     }
-    image
-    {
-      function        = BOX
-      state           = INSENSITIVE
-      detail          = "spinbutton_down"
-      file            = "../assets/spinbutton-down-insensitive.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      overlay_file    = "../assets/arrow-small-down-insensitive.png"
-      overlay_stretch = FALSE
+    image {
+      function = BOX
+      state    = INSENSITIVE
+    detail            = "spinbutton_up"
+      shadow   = OUT
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
     }
-    image
-    {
-      function        = BOX
-      state           = ACTIVE
+    image {
+      function = BOX
+    detail            = "spinbutton_up"
+      state    = ACTIVE
+      file     = "../../assets/gtk2/Buttons/flat-button-active.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+    detail            = "spinbutton_up"
+      state    = PRELIGHT
+      shadow   = IN
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+    detail            = "spinbutton_up"
+      state    = INSENSITIVE
+      shadow   = IN
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+
+
+
+  image {
+      function = BOX
+      state    = NORMAL
       detail          = "spinbutton_down"
-      file            = "../assets/spinbutton-down.png"
-      border          = { 5, 5, 5, 5 }
-      stretch         = TRUE
-      overlay_file    = "../assets/arrow-small-down-hover.png"
-      overlay_stretch = FALSE
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = PRELIGHT
+      detail          = "spinbutton_down"
+      shadow   = OUT
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = INSENSITIVE
+      detail          = "spinbutton_down"
+      shadow   = OUT
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      detail          = "spinbutton_down"
+      state    = ACTIVE
+      file     = "../../assets/gtk2/Buttons/flat-button-active.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      detail          = "spinbutton_down"
+      state    = PRELIGHT
+      shadow   = IN
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      detail          = "spinbutton_down"
+      state    = INSENSITIVE
+      shadow   = IN
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
     }
   }
 }
 
+style "button_check_radio" = "bg" {
+  bg[PRELIGHT] = @bg_color
+}
+
+style "view_button_check_radio" = "bg" {
+  bg[PRELIGHT] = @base_color
+}
+
 style "button_label" {
-  fg[NORMAL]      = @button_fg_color
-  fg[ACTIVE]      = @button_fg_color
+  fg[NORMAL] = @button_fg_color
+  fg[PRELIGHT] = @button_fg_color
+  fg[ACTIVE] = mix(0.5, mix(0.5, @base_color, @button_active), @button_fg_color)
   fg[INSENSITIVE] = @button_insensitive_fg_color
+
+  font_name = "Medium"
 }
 
 style "combobox_separator"
@@ -382,4 +690,88 @@ style "combobox_separator"
   xthickness = 0
   ythickness = 0
   GtkWidget::wide-separators = 1
+}
+
+style "combobox_button" = "button" {
+  
+    GtkButton::inner-border                       = { 0, 0, 0, 0 }
+  xthickness = 7
+  ythickness = 7
+}
+
+style "button_separator" {
+  xthickness = 0
+  ythickness = 0
+
+  GtkWidget::wide-separators = 1
+  GtkWidget::separator-height = 0
+  GtkWidget::separator-width = 0
+}
+
+style "flat_button" {
+  GtkButton::inner-border = { 7, 7, 7, 7 }
+  xthickness = 0
+  ythickness = 0
+
+  fg[NORMAL] = mix(0.87, @fg_color, @bg_color)
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @fg_color
+  fg[INSENSITIVE] = mix(0.28, @fg_color, @bg_color)
+
+  engine "pixmap" {
+    image {
+      function = BOX
+      state    = NORMAL
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = PRELIGHT
+      shadow   = OUT
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = INSENSITIVE
+      shadow   = OUT
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = ACTIVE
+      file     = "../../assets/gtk2/Buttons/flat-button-active.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = PRELIGHT
+      shadow   = IN
+      file     = "../../assets/gtk2/Buttons/flat-button-hover.png"
+      border   = { 7, 7, 7, 7 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = INSENSITIVE
+      shadow   = IN
+      file     = "../../assets/gtk2/Others/null.png"
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+  }
+}
+
+style "link_button" {
+  engine "pixmap" {
+    image {
+      function = BOX
+    }
+  }
 }

@@ -1,5 +1,7 @@
 style "treeview"
 {
+  
+
     engine "pixmap"
     {
     image
@@ -12,15 +14,84 @@ style "treeview"
     }
 }
 
+style "treeview_header" {
+  xthickness = 2
+  ythickness = 1
+
+  fg[NORMAL] = mix(0.6, @text_color, @base_color)
+  fg[PRELIGHT] = mix(0.8, @text_color, @base_color)
+  fg[ACTIVE]  = @text_color
+  fg[INSENSITIVE] = mix(0.24, @text_color, @base_color)
+  font_name = "Medium"
+
+  GtkButton::inner-border = {7, 7, 0, 3}
+
+  engine "pixmap" {
+    image {
+      function = BOX
+      state    = NORMAL
+      file      ="../../assets/gtk2/Column/column.png"
+      border   = { 0, 1, 0, 1 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = PRELIGHT
+      file      ="../../assets/gtk2/Column/column-hover.png"
+      border   = { 0, 1, 0, 1 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = ACTIVE
+      file      ="../../assets/gtk2/Column/column-active.png"
+      border   = { 0, 1, 0, 1 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = INSENSITIVE
+      file      ="../../assets/gtk2/Column/column-insensitive.png"
+      border   = { 0, 1, 0, 1 }
+      stretch  = TRUE
+    }
+  }
+}
+
+# FIXME: needs for Inkskape's scrolled colour palette
+style "scrolled_viewport" {
+  xthickness = 0
+  ythickness = 1
+
+  engine "pixmap" {
+    image {
+      function = SHADOW
+      file      = "../../assets/gtk2/Others/null.png" 
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+  }
+}
+
+style "misc_button_label" {
+  fg[NORMAL] = mix(0.87, @fg_color, @bg_color)
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @fg_color
+  fg[INSENSITIVE] = mix(0.28, @fg_color, @bg_color)
+  font_name = "Regular"
+}
+
 style "scrolled_window"
 {
+  xthickness = 1
+  ythickness = 1
     engine "pixmap"
     {
     image
     {
        function         = SHADOW
-       file             = "../assets/frame.png"
-       border             = { 5, 5, 5, 5 }
+       file             = "../../assets/gtk2/Shadows/frame.png"
+       border             = { 1, 1, 1, 1 }
        stretch          = TRUE
     }
   }
@@ -32,98 +103,51 @@ style "frame"
         ythickness      = 1
 
         engine "pixmap"
-    {
-        image
         {
-                function                = SHADOW
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                shadow                  = IN
+        image {
+          function = SHADOW
+          shadow   = NONE
         }
-        image
-        {
-                function                = SHADOW_GAP
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                gap_start_file          = "../assets/frame-gap-start.png"
-                gap_start_border        = { 1, 0, 0, 0 }
-                gap_end_file            = "../assets/frame-gap-end.png"
-                gap_end_border          = { 0, 1, 0, 0 }
-                shadow                  = IN
+
+        image {
+          function = SHADOW
+          file     = "../../assets/gtk2/Shadows/frame.png"
+          border   = {1, 1, 1, 1}
+          stretch  = TRUE
         }
-        image
-        {
-                function                = SHADOW
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                shadow                  = OUT
-        }
-        image
-        {
-                function                = SHADOW_GAP
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                gap_start_file          = "../assets/frame-gap-start.png"
-                gap_start_border        = { 1, 0, 0, 0 }
-                gap_end_file            = "../assets/frame-gap-end.png"
-                gap_end_border          = { 0, 1, 0, 0 }
-                shadow                  = OUT
-        }
-        image
-        {
-                function                = SHADOW
-                file                    = "../assets/frame.png"
-                border                      = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                shadow                  = ETCHED_IN
-        }
-        image
-        {
-                function                = SHADOW_GAP
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                gap_start_file          = "../assets/frame-gap-start.png"
-                gap_start_border        = { 1, 0, 0, 0 }
-                gap_end_file            = "../assets/frame-gap-end.png"
-                gap_end_border          = { 0, 1, 0, 0 }
-                shadow                  = ETCHED_IN
-        }
-        image
-        {
-                function                = SHADOW
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                shadow                  = ETCHED_OUT
-        }
-        image
-        {
-                function                = SHADOW_GAP
-                file                    = "../assets/frame.png"
-                border                  = { 1, 1, 1, 1 }
-                stretch                 = TRUE
-                gap_start_file          = "../assets/frame-gap-start.png"
-                gap_start_border        = { 1, 0, 0, 0 }
-                gap_end_file            = "../assets/frame-gap-end.png"
-                gap_end_border          = { 0, 1, 0, 0 }
-                shadow                  = ETCHED_OUT
-        }
+
+
+        image {
+          function       = SHADOW_GAP
+          file             = "../../assets/gtk2/Shadows/frame.png"
+          border           = { 1, 1, 1, 1 }
+          stretch          = TRUE
+          gap_start_file   = "../../assets/gtk2/Shadows/gap.png"
+          gap_start_border = { 1, 0, 0, 0 }
+          gap_end_file     = "../../assets/gtk2/Shadows/gap.png"
+          gap_end_border   = { 0, 1, 0, 0 }
+      }
+
+
         }
 }
 
-style "tooltips"
+style "tooltips" = "menu_frame"
 {
-    xthickness  = 8
-    ythickness  = 4
+    xthickness  = 7
+    ythickness  = 7
 
-    bg[NORMAL]    = @tooltip_bg_color
-    fg[NORMAL]    = @tooltip_fg_color
-    bg[SELECTED]    = @tooltip_bg_color
+  engine "pixmap" {
+      
+      image {
+        function = BOX
+        file      ="../../assets/gtk2/Buttons/button.png"
+        border   = { 0, 0, 0, 0 }
+        stretch  = TRUE
+      }
+    }
+
+
 }
 
 # Chromium
@@ -147,6 +171,31 @@ style "chrome-gtk-frame"
     ChromeGtkFrame::scrollbar-slider-normal-color = @bg_color
 }
 
+style "bg" {
+  fg[NORMAL] = @fg_color
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @fg_color
+  bg[NORMAL] = @bg_color
+  bg[PRELIGHT] = @bg_color
+  bg[ACTIVE] = @bg_color
+  bg[INSENSITIVE] = @bg_color
+}
+
+style "base" {
+  fg[NORMAL] =@fg_color
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @fg_color
+  bg[NORMAL] = @base_color
+  bg[PRELIGHT] = @base_color
+  bg[ACTIVE] = @base_color
+  bg[INSENSITIVE] = @base_color
+}
+
+style "text" = "default_colors" {
+  fg[NORMAL] = @fg_color # FIXME: VMWare needs this?
+  engine "murrine" { textstyle = 0 }
+}
+
 style "null"
 {
     engine "pixmap"
@@ -154,15 +203,58 @@ style "null"
         image
         {
             function    = BOX
-            file        = "../assets/null.png"
+            file      = "../../assets/gtk2/Others/null.png" 
             stretch     = TRUE
     }
     }
 }
 
-style "toplevel_hack" {
 
-  engine "adwaita" {
+style "standalone_entry" {
+  bg[NORMAL] = @bg_color
+
+  engine "pixmap" {
+    image {
+      function = FLAT_BOX
+      detail   = "entry_bg"
+      state    = NORMAL
+      file      = "../../assets/gtk2/Others/null.png" 
+      stretch  = TRUE
+      border   = { 0, 0, 0, 0 }
+    }
+    image {
+      function = FLAT_BOX
+      detail   = "entry_bg"
+      state    = ACTIVE
+      file      = "../../assets/gtk2/Others/null.png" 
+      stretch  = TRUE
+      border   = { 0, 0, 0, 0 }
+    }
+    image {
+      function = SHADOW
+      detail   = "entry"
+      state    = NORMAL
+      file      = "../../assets/gtk2/Others/null.png" 
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
+    image {
+      function = SHADOW
+      detail   = "entry"
+      state    = ACTIVE
+      file      = "../../assets/gtk2/Others/null.png" 
+      border   = { 0, 0, 0, 0 }
+      stretch  = TRUE
+    }
   }
 }
 
+style "toplevel_hack" {
+  engine "adwaita" {}
+}
+
+style "disable_text_shadow" {
+  engine "murrine" {
+    textstyle = 0
+  }
+}

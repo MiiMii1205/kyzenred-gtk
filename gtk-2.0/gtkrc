@@ -1,21 +1,33 @@
 # Theme:       Kyzenred
 # Description: A full KDE theme based on gamer aesthetics and modern minimalism (GTK themes and assets)
 
-gtk-color-scheme = "text_color:#eff0f1"
-gtk-color-scheme = "base_color:#232629"
-gtk-color-scheme = "insensitive_base_color:#1f2225"
-gtk-color-scheme = "fg_color:#eff0f1"
-gtk-color-scheme = "bg_color:#31363b"
-gtk-color-scheme = "selected_fg_color:#eff0f1"
-gtk-color-scheme = "selected_bg_color:#3daee9"
-gtk-color-scheme = "button_fg_color:#eff0f1"
-gtk-color-scheme = "tooltip_fg_color:#eff0f1"
-gtk-color-scheme = "tooltip_bg_color:#31363b"
-gtk-color-scheme = "insensitive_fg_color:#6b6f73"
-gtk-color-scheme = "insensitive_text_color:#626567"
-gtk-color-scheme = "button_insensitive_fg_color:#6b6f73"
-gtk-color-scheme = "button_active:#3daee9"
-gtk-color-scheme = "border_color:#606468"
+####################DISCLAIMER###################
+#   This file was generated 09/01/20 18:11:42   #    
+#   Any changes to it won't be permanent.       #       
+#################################################
+
+gtk-color-scheme = "text_color:#fae9e8"
+gtk-color-scheme = "base_color:#010d0a"
+gtk-color-scheme = "insensitive_base_color:#000504"
+gtk-color-scheme = "fg_color:#fff8f7"
+gtk-color-scheme = "bg_color:#031b16"
+gtk-color-scheme = "insensitive_bg_color:#010504"
+gtk-color-scheme = "selected_fg_color:#001b16"
+gtk-color-scheme = "selected_bg_color:#e51b42"
+gtk-color-scheme = "button_fg_color:#e9f5f3"
+gtk-color-scheme = "tooltip_fg_color:#fff8f7"
+gtk-color-scheme = "tooltip_bg_color:#031b16"
+gtk-color-scheme = "insensitive_fg_color:#050100"
+gtk-color-scheme = "insensitive_text_color:#040101"
+gtk-color-scheme = "button_insensitive_fg_color:#020403"
+gtk-color-scheme = "button_active:#c91e3c"
+gtk-color-scheme = "border_color:#942228"
+gtk-color-scheme = "link_color:#a77d9b"
+gtk-color-scheme = "visited_link_color:#7f8c8d"
+gtk-color-scheme = "inactive_notebook_bg:#42524e"
+gtk-color-scheme = "inactive_notebook_borders:#354743"
+gtk-color-scheme = "base_color_alt:#031b16"
+
 
 include "widgets/default"
 include "widgets/buttons"

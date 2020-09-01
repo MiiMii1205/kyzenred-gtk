@@ -1,214 +1,312 @@
 style "entry"
 {
-    xthickness    = 4
-    ythickness      = 4
+  xthickness    = 7
+  ythickness    = 2
 
-  base[NORMAL] = @base_color
-  base[ACTIVE] = @base_color
+  base[NORMAL] = @bg_color
+  base[ACTIVE] = @selected_bg_color
+  base[INSENSITIVE] = @bg_color
+
+  text[NORMAL] = @text_color
+  text[ACTIVE] = @text_color
+  text[INSENSITIVE] = @insensitive_text_color
+
+  engine "pixmap"
+  {
+    image
+    {
+      function        = SHADOW
+      detail          = "entry"
+      state           = NORMAL
+      shadow   = IN
+      file            ="../../assets/gtk2/Entry/entry.png"
+      border          = { 7, 7, 2, 2 }
+      stretch         = TRUE
+    }
+
+   image
+    {
+      function        = SHADOW
+      detail          = "entry"
+      state           = ACTIVE
+      shadow   = IN
+      file            ="../../assets/gtk2/Entry/entry-active.png"
+      border          = { 7, 7, 2, 2 }
+      stretch         = TRUE
+    }
+
+
+    image
+    {
+      function        = SHADOW
+      detail          = "entry"
+      state           = INSENSITIVE
+      shadow   = IN
+      file            ="../../assets/gtk2/Entry/entry-insensitive.png"
+      border          = { 7, 7, 2, 2 }
+      stretch         = TRUE
+    }
+
+    image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = NORMAL
+      file            ="../../assets/gtk2/Entry/bg.png"
+    }
+    image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = ACTIVE
+      file            ="../../assets/gtk2/Entry/bg-active.png"
+    }
+    image 
+    {
+      function        = FLAT_BOX
+      detail          = "entry_bg"
+      state           = INSENSITIVE
+      file            ="../../assets/gtk2/Entry/bg-insensitive.png"
+    }
+ 
+  }
+}
+
+
+style "combobox_entry" = "entry"
+{
+  xthickness    = 0
+  ythickness    = 0
+
+  base[NORMAL] = @bg_color
+  base[ACTIVE] = @selected_bg_color
+  base[INSENSITIVE] = @insensitive_bg_color
+
+  engine "pixmap" {
+
+    # LTR version
+
+     image {
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/ltr-button.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
+    }
+
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-active.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
+    }
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-insensitive.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
+    }
+
+    # RTL version
+
+     image {
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/rtl-button.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-active.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-insensitive.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+  }
+}
+
+style "notebook_combobox_entry" = "button"
+{
+  base[NORMAL] = @bg_color
+  base[ACTIVE] = @selected_bg_color
   base[INSENSITIVE] = @insensitive_base_color
 
-    engine "pixmap"
-    {
-    image
-    {
-        function        = SHADOW
-        detail          = "entry"
-    state       = NORMAL
-        shadow          = IN
-        file            = "../assets/entry.png"
-        border          = { 4, 4, 4, 4 }
-        stretch         = TRUE
+  engine "pixmap" {
+
+    # LTR version
+
+     image {
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/ltr-button.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
     }
-    image
-    {
-        function        = SHADOW
-        detail          = "entry"
-    state       = INSENSITIVE
-        shadow          = IN
-        file            = "../assets/entry-insensitive.png"
-        border          = { 4, 4, 4, 4 }
-        stretch         = TRUE
+
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-active.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
     }
-  image
-  {
-        function        = SHADOW
-        detail          = "entry"
-    state       = ACTIVE
-        file              = "../assets/entry-active.png"
-        border          = { 4, 4, 4, 4 }
-        stretch         = TRUE
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-insensitive.png"
+      border    = { 7, 0, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
     }
-    image
-    {
-        function    = FLAT_BOX
-        detail      = "entry_bg"
-        state       = ACTIVE
-        file              = "../assets/null.png"
-        border          = { 0, 0, 0, 0 }
-        stretch         = TRUE
+
+    # RTL version
+
+     image {
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/rtl-button.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
     }
- }
+
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-active.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-insensitive.png"
+      border    = { 0, 7, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+  }
 }
 
-style "combobox_entry"
+style "combobox_entry_button"  = "button"
 {
-  xthickness = 3
-  ythickness = 4
+  xthickness = 0
+  ythickness = 0
 
   engine "pixmap" {
 
     # LTR version
 
     image {
-      function = SHADOW
-      detail = "entry"
-      state = NORMAL
-      shadow = IN
-      file = "../assets/combo-entry.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/ltr-button.png"
+      border    = { 2, 7, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
+    }
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-active.png"
+     border    = { 2, 7, 7, 7 }
+      stretch   = TRUE
+      direction = LTR
+    }
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/ltr-button-insensitive.png"
+     border    = { 2, 7, 7, 7 }
+      stretch   = TRUE
       direction = LTR
     }
 
     image {
-      function = SHADOW
-      detail = "entry"
-      state = INSENSITIVE
-      shadow = IN
-      file = "../assets/combo-entry-insensitive.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = LTR
-    }
-
-    image {
-      function = SHADOW
-      detail = "entry"
-      state = ACTIVE
-      file = "../assets/combo-entry-active.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
+      function  = BOX
+      state = PRELIGHT
+      file          = "../../assets/gtk2/Buttons/ltr-button-hover.png"
+     border    = { 2, 7, 7, 7 }
+      stretch   = TRUE
       direction = LTR
     }
 
     # RTL version
 
     image {
-      function = SHADOW
-      detail = "entry"
-      state = NORMAL
-      shadow = IN
-      file = "../assets/combo-entry-button.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
+      function  = BOX
+      state     = NORMAL
+      file          = "../../assets/gtk2/Buttons/rtl-button.png"
+      border    = { 7, 2, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+
+     image {
+      function  = BOX
+      state     = ACTIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-active.png"
+      border    = { 7, 2, 7, 7 }
+      stretch   = TRUE
+      direction = RTL
+    }
+
+     image {
+      function  = BOX
+      state     = INSENSITIVE
+      file          = "../../assets/gtk2/Buttons/rtl-button-insensitive.png"
+      border    = { 7, 2, 7, 7 }
+      stretch   = TRUE
       direction = RTL
     }
 
     image {
-      function = SHADOW
-      detail = "entry"
-      state = INSENSITIVE
-      shadow = IN
-      file = "../assets/combo-entry-button-insensitive.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
+      function  = BOX
+      state = PRELIGHT
+      file          = "../../assets/gtk2/Buttons/rtl-button-hover.png"
+      border    = { 7, 2, 7, 7 }
+      stretch   = TRUE
       direction = RTL
     }
 
-    image {
-      function = SHADOW
-      detail = "entry"
-      state = ACTIVE
-      file = "../assets/combo-entry-button-active.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = RTL
-    }
   }
 }
 
-style "combobox_entry_button"
-{
-  xthickness = 6
-
-  fg[ACTIVE] = @text_color
-
-  engine "pixmap" {
-
-    # LTR version
-
-    image {
-      function = BOX
-      state = NORMAL
-      file = "../assets/combo-entry-button.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = LTR
-    }
-
-    image {
-      function = BOX
-      state = PRELIGHT
-      file = "../assets/combo-entry-button.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = LTR
-    }
-
-    image {
-      function = BOX
-      state = INSENSITIVE
-      file = "../assets/combo-entry-button-insensitive.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = LTR
-    }
-
-    image {
-      function = BOX
-      state = ACTIVE
-      file = "../assets/combo-entry-button-active.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = LTR
-    }
-
-    # RTL version
-    image {
-      function = BOX
-      state = NORMAL
-      file = "../assets/combo-entry.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = RTL
-    }
-
-    image {
-      function = BOX
-      state = PRELIGHT
-      file = "../assets/combo-entry.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = RTL
-    }
-
-    image {
-      function = BOX
-      state = INSENSITIVE
-      file = "../assets/combo-entry-insensitive.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = RTL
-    }
-
-    image {
-      function = BOX
-      state = ACTIVE
-      file = "../assets/combo-entry-active.png"
-      border = { 4, 4, 5, 4 }
-      stretch = TRUE
-      direction = RTL
-    }
-  }
+style "notebook_entry" = "entry" {
+  base[INSENSITIVE] = @insensitive_bg_color
 }
 
+style "textview" {
+  bg[NORMAL] = @base_color
+  fg[INSENSITIVE] = @insensitive_text_color
+}

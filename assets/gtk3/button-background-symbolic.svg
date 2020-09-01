@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="button-background-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   viewBox="0 0 33.866666 33.866668"
+   height="128"
+   width="128"
+   version="1.1"
+   id="svg14">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     inkscape:snap-page="true"
+     units="px"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:guide-bbox="true"
+     showguides="false"
+     inkscape:window-maximized="0"
+     inkscape:window-y="100"
+     inkscape:window-x="526"
+     inkscape:window-height="1407"
+     inkscape:window-width="1835"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg14"
+     inkscape:document-units="px"
+     inkscape:cy="23.055528"
+     inkscape:cx="43.60028"
+     inkscape:zoom="5.6568545"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       id="guide100"
+       orientation="1,0"
+       position="1.7945826,8.2028462" />
+    <sodipodi:guide
+       id="guide102"
+       orientation="0,-1"
+       position="8.2029206,8.2028162" />
+    <sodipodi:guide
+       id="guide104"
+       orientation="1,0"
+       position="8.2029096,1.7942948" />
+    <sodipodi:guide
+       id="guide106"
+       orientation="0,-1"
+       position="8.2028836,1.7943862" />
+    <sodipodi:guide
+       id="guide108"
+       orientation="0,-1"
+       position="8.2029096,-0.013224896" />
+    <sodipodi:guide
+       id="guide110"
+       orientation="0,-1"
+       position="0,9.9973156" />
+    <sodipodi:guide
+       id="guide112"
+       orientation="1,0"
+       position="9.9973156,0" />
+    <sodipodi:guide
+       id="guide114"
+       orientation="1,0"
+       position="0,9.9973156" />
+    <sodipodi:guide
+       id="guide198"
+       orientation="1,0"
+       position="16.410505,9.9972194" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path86"
+     style="opacity:0.5;fill:currentColor;fill-opacity:1;stroke-width:3.33329;color-rendering:auto"
+     d="M -0.2645834,-0.2645831 V 34.13125 H 34.131229 l 2.1e-5,-34.3958331 z"
+     sodipodi:nodetypes="ccccc"
+     class="error" />
+  <path
+     class="warning"
+     sodipodi:nodetypes="ccccc"
+     d="M -0.2645834,-0.2645831 V 34.13125 H 34.131229 l 2.1e-5,-34.3958331 z"
+     style="opacity:0.5;fill:currentColor;fill-opacity:1;stroke-width:3.33329;color-rendering:auto"
+     id="path142" />
+</svg>
