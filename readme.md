@@ -10,10 +10,10 @@ A full KDE theme based on gamer aesthetics and modern minimalism (GTK themes and
 Just put this repository in your `~/.themes/` directory (make a new one if it doesn't exist)
 
 ## Usage
-To set your GTK+ theme you'll need to open up your KDE control center and go to the [GNOME Application Style (GTK)](https://userbase.kde.org/System_Settings/GNOME_Application_Style_(GTK)) module.
+To set your GTK+ theme you'll need to open up your KDE system manager and go to the [GNOME Application Style (GTK)](https://userbase.kde.org/System_Settings/GNOME_Application_Style_(GTK)) module.
 
 ## Updating the color scheme
-At its core, Kyzenred comes with pre-rendered assets that matches it's official color scheme. That means that you can use Kyzenred as is.
+At its core, Kyzenred comes with pre-rendered assets that matches its official color scheme. That means that you can use Kyzenred as is.
 However, Kyzenred was designed to handle (more or less) any KDE color scheme you'll throw at it.
 
 To find out how to change your KDE color scheme, [click here](https://docs.kde.org/trunk5/en/kde-workspace/kcontrol/colors/index.html)!
