@@ -7,78 +7,78 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="button-background-symbolic.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   viewBox="0 0 33.866666 33.866668"
-   height="128"
-   width="128"
+   id="svg14"
    version="1.1"
-   id="svg14">
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="button-background-symbolic.svg">
   <defs
      id="defs8" />
   <sodipodi:namedview
-     inkscape:snap-page="true"
-     units="px"
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:guide-bbox="true"
-     showguides="false"
-     inkscape:window-maximized="0"
-     inkscape:window-y="100"
-     inkscape:window-x="526"
-     inkscape:window-height="1407"
-     inkscape:window-width="1835"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="svg14"
-     inkscape:document-units="px"
-     inkscape:cy="23.055528"
-     inkscape:cx="43.60028"
-     inkscape:zoom="5.6568545"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6568545"
+     inkscape:cx="43.60028"
+     inkscape:cy="30.126595"
+     inkscape:document-units="px"
+     inkscape:current-layer="svg14"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1718"
+     inkscape:window-height="687"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:snap-page="true">
     <sodipodi:guide
-       id="guide100"
+       position="1.7945826,8.2028462"
        orientation="1,0"
-       position="1.7945826,8.2028462" />
+       id="guide100" />
     <sodipodi:guide
-       id="guide102"
+       position="8.2029206,8.2028162"
        orientation="0,-1"
-       position="8.2029206,8.2028162" />
+       id="guide102" />
     <sodipodi:guide
-       id="guide104"
+       position="8.2029096,1.7942948"
        orientation="1,0"
-       position="8.2029096,1.7942948" />
+       id="guide104" />
     <sodipodi:guide
-       id="guide106"
+       position="8.2028836,1.7943862"
        orientation="0,-1"
-       position="8.2028836,1.7943862" />
+       id="guide106" />
     <sodipodi:guide
-       id="guide108"
+       position="8.2029096,-0.013224896"
        orientation="0,-1"
-       position="8.2029096,-0.013224896" />
+       id="guide108" />
     <sodipodi:guide
-       id="guide110"
+       position="0,9.9973156"
        orientation="0,-1"
-       position="0,9.9973156" />
+       id="guide110" />
     <sodipodi:guide
-       id="guide112"
+       position="9.9973156,0"
        orientation="1,0"
-       position="9.9973156,0" />
+       id="guide112" />
     <sodipodi:guide
-       id="guide114"
+       position="0,9.9973156"
        orientation="1,0"
-       position="0,9.9973156" />
+       id="guide114" />
     <sodipodi:guide
-       id="guide198"
+       position="16.410505,9.9972194"
        orientation="1,0"
-       position="16.410505,9.9972194" />
+       id="guide198" />
   </sodipodi:namedview>
   <metadata
      id="metadata11">
@@ -93,15 +93,15 @@
     </rdf:RDF>
   </metadata>
   <path
-     id="path86"
-     style="opacity:0.5;fill:currentColor;fill-opacity:1;stroke-width:3.33329;color-rendering:auto"
-     d="M -0.2645834,-0.2645831 V 34.13125 H 34.131229 l 2.1e-5,-34.3958331 z"
+     class="error"
      sodipodi:nodetypes="ccccc"
-     class="error" />
+     d="M -0.2645834,-0.2645831 V 34.13125 H 34.131229 l 2.1e-5,-34.3958331 z"
+     style="opacity:0.5;fill:rgb(3,27,22)"
+     id="path86" />
   <path
-     class="warning"
-     sodipodi:nodetypes="ccccc"
+     id="path142"
+     style="opacity:0.5;fill:rgb(3,27,22)"
      d="M -0.2645834,-0.2645831 V 34.13125 H 34.131229 l 2.1e-5,-34.3958331 z"
-     style="opacity:0.5;fill:currentColor;fill-opacity:1;stroke-width:3.33329;color-rendering:auto"
-     id="path142" />
+     sodipodi:nodetypes="ccccc"
+     class="warning" />
 </svg>

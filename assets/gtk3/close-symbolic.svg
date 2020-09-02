@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg12"
-   version="1.1"
-   viewBox="0 0 22 22"
-   sodipodi:docname="breeze-close-symbolic.svg"
-   width="22"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    height="22"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   width="22"
+   sodipodi:docname="close-symbolic.svg"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg12">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -22,53 +22,53 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1671"
-     inkscape:window-height="1407"
-     id="namedview4"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="24.361111"
-     inkscape:cx="5.2417154"
-     inkscape:cy="6.5342593"
-     inkscape:window-x="1720"
-     inkscape:window-y="0"
+     inkscape:current-layer="svg12"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg12" />
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="6.5342593"
+     inkscape:cx="5.2417154"
+     inkscape:zoom="24.361111"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview4"
+     inkscape:window-height="1407"
+     inkscape:window-width="1718"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <g
-     id="active-center"
-     style="enable-background:new">
+     style="enable-background:new"
+     id="active-center">
     <rect
-       y="0"
-       x="0"
-       height="22"
-       width="22"
+       id="rect4175"
        style="opacity:0.00100002"
-       id="rect4175" />
+       width="22"
+       height="22"
+       x="0"
+       y="0" />
     <path
-       class="color"
-       sodipodi:nodetypes="ccccccccccccccccc"
-       inkscape:connector-curvature="0"
-       id="path145"
+       style="fill:rgb(255,248,247);stroke-width:1.49968"
        d="M 7.0014555,6.99999 H 8.407082 l 2.592919,2.59375 2.59375,-2.59375 h 1.404794 v 1.43896 l -2.576668,2.57666 2.576668,2.57667 v 1.40771 H 13.562502 L 11,12.43749 8.4375009,14.99999 H 7.0014555 l 2e-6,-1.40771 2.5766693,-2.57667 -2.5766713,-2.54594 z"
-       style="fill:currentColor;stroke-width:1.49968" />
+       id="path145"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       class="color" />
   </g>
 </svg>

@@ -7,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   viewBox="0 0 18 18"
-   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="check-indeterminate-symbolic.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   id="svg8"
+   viewBox="0 0 18 18"
+   version="1.1">
   <metadata
      id="metadata14">
     <rdf:RDF>
@@ -27,37 +27,37 @@
   <defs
      id="defs12" />
   <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1718"
-     inkscape:window-height="1407"
-     id="namedview10"
-     showgrid="false"
-     inkscape:zoom="18.541911"
-     inkscape:cx="0.90386293"
-     inkscape:cy="7.6961812"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:document-rotation="0"
      inkscape:current-layer="svg8"
-     inkscape:document-rotation="0" />
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="1720"
+     inkscape:cy="7.6961812"
+     inkscape:cx="0.90386293"
+     inkscape:zoom="18.541911"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="1407"
+     inkscape:window-width="1718"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <path
-     style="opacity:0.5;fill:currentColor"
-     d="M 7.78125,1.000047 1,7.78325 V 17 h 9.216797 L 17,10.218749 v -0.002 V 1 Z"
-     id="path86"
-     inkscape:connector-curvature="0"
+     class="warning"
      sodipodi:nodetypes="cccccccc"
-     class="warning" />
-  <path
-     d="M 7.78125,1 1,7.78125 V 17 h 9.216797 L 17,10.21875 V 1 Z M 9,4.7050781 12.767578,8.4746094 V 9.5253906 L 9,13.294922 5.230469,9.5253906 V 8.4746094 Z"
-     id="path5"
      inkscape:connector-curvature="0"
+     id="path86"
+     d="M 7.78125,1.000047 1,7.78325 V 17 h 9.216797 L 17,10.218749 v -0.002 V 1 Z"
+     style="opacity:0.5;fill:#1c0408" />
+  <path
+     style="fill:#c91e3c;fill-opacity:1"
      class="error"
-     style="fill:currentColor;fill-opacity:1" />
+     inkscape:connector-curvature="0"
+     id="path5"
+     d="M 7.78125,1 1,7.78125 V 17 h 9.216797 L 17,10.21875 V 1 Z M 9,4.7050781 12.767578,8.4746094 V 9.5253906 L 9,13.294922 5.230469,9.5253906 V 8.4746094 Z" />
 </svg>

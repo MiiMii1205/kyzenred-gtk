@@ -7,73 +7,73 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="38"
-   height="38"
-   viewBox="0 0 10.054167 10.054167"
-   version="1.1"
-   id="svg907"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="entry-symbolic.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   id="svg907"
+   version="1.1"
+   viewBox="0 0 10.054167 10.054167"
+   height="38"
+   width="38">
   <defs
      id="defs901" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="14.093927"
-     inkscape:cy="38.957028"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     units="px"
-     inkscape:window-width="1676"
-     inkscape:window-height="1407"
-     inkscape:window-x="1720"
+     inkscape:window-maximized="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     inkscape:window-x="0"
+     inkscape:window-height="1407"
+     inkscape:window-width="1718"
+     units="px"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="38.957028"
+     inkscape:cx="14.093927"
+     inkscape:zoom="11.2"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
     <sodipodi:guide
-       position="2.2351553e-06,10.054167"
+       id="guide1575"
        orientation="1,0"
-       id="guide1575" />
+       position="2.2351553e-06,10.054167" />
     <sodipodi:guide
-       position="10.054171,10.054167"
+       id="guide1577"
        orientation="1,0"
-       id="guide1577" />
+       position="10.054171,10.054167" />
     <sodipodi:guide
-       position="10.054169,10.054167"
+       id="guide1579"
        orientation="0,-1"
-       id="guide1579" />
+       position="10.054169,10.054167" />
     <sodipodi:guide
-       position="10.054171,-3.1617604e-06"
+       id="guide1581"
        orientation="0,-1"
-       id="guide1581" />
+       position="10.054171,-3.1617604e-06" />
     <sodipodi:guide
-       position="1.8520733,0.52865685"
+       id="guide1583"
        orientation="1,0"
-       id="guide1583" />
+       position="1.8520733,0.52865685" />
     <sodipodi:guide
-       position="8.2020715,0.52865685"
+       id="guide1585"
        orientation="1,0"
-       id="guide1585" />
+       position="8.2020715,0.52865685" />
     <sodipodi:guide
-       position="-1.8520818,1.852079"
+       id="guide1591"
        orientation="0,-1"
-       id="guide1591" />
+       position="-1.8520818,1.852079" />
     <sodipodi:guide
-       position="10.054165,8.2020853"
+       id="guide1593"
        orientation="0,-1"
-       id="guide1593" />
+       position="10.054165,8.2020853" />
   </sodipodi:namedview>
   <metadata
      id="metadata904">
@@ -88,16 +88,16 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
+     transform="translate(-61.020039,-173.6091)"
      id="layer1"
-     transform="translate(-61.020039,-173.6091)">
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
     <path
-       id="path32"
-       style="fill:currentColor"
-       d="M 0,31.000017 7,38 h 24 l 7,-6.999983 z"
-       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.26458333,0,0,0.26458333,61.020039,173.6091)"
        class="success"
-       transform="matrix(0.26458333,0,0,0.26458333,61.020039,173.6091)" />
+       sodipodi:nodetypes="ccccc"
+       d="M 0,31.000017 7,38 h 24 l 7,-6.999983 z"
+       style="fill:rgb(255,248,247)"
+       id="path32" />
   </g>
 </svg>

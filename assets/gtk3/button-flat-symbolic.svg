@@ -7,34 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="button-flat-symbolic.svg"
-   id="svg14"
-   version="1.1"
-   width="37.78513"
+   viewBox="0 0 9.9973154 9.9973158"
    height="37.78513"
-   viewBox="0 0 9.9973154 9.9973158">
+   width="37.78513"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="button-flat-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <sodipodi:namedview
-     inkscape:current-layer="svg14"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="18.892565"
-     inkscape:cx="18.047024"
-     inkscape:zoom="18.922788"
-     showgrid="false"
-     id="namedview8"
-     inkscape:window-height="1407"
-     inkscape:window-width="2220"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
+     inkscape:document-rotation="0"
      pagecolor="#ffffff"
-     inkscape:document-rotation="0" />
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2283"
+     inkscape:window-height="1407"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="18.922788"
+     inkscape:cx="18.047024"
+     inkscape:cy="18.892565"
+     inkscape:window-x="41"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg14" />
   <defs
      id="defs8" />
   <metadata
@@ -50,13 +50,13 @@
     </rdf:RDF>
   </metadata>
   <path
-     class="error"
+     id="path86"
+     style="opacity:0.5;fill:rgb(3,27,22)"
      d="M 1.794205,2.8938672e-4 0,1.7944994 v 8.2031104 h 8.2031155 l 1.794206,-1.79472 V 2.8938672e-4 Z"
-     style="opacity:0.5;fill:currentColor"
-     id="path86" />
+     class="error" />
   <path
-     id="path142"
-     style="opacity:0.5;fill:currentColor"
+     class="warning"
      d="M 1.794205,2.8938672e-4 0,1.7944994 v 8.2031104 h 8.2031155 l 1.794206,-1.79472 V 2.8938672e-4 Z"
-     class="warning" />
+     style="opacity:0.5;fill:rgb(3,27,22)"
+     id="path142" />
 </svg>

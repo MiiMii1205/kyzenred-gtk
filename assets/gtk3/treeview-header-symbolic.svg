@@ -7,38 +7,38 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="67.733337mm"
-   height="67.73333mm"
-   viewBox="0 0 67.733338 67.73333"
-   version="1.1"
-   id="svg1938"
+   sodipodi:docname="treeview-header-symbolic.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="treeview-header-symbolic.svg">
+   id="svg1938"
+   version="1.1"
+   viewBox="0 0 67.733338 67.73333"
+   height="67.73333mm"
+   width="67.733337mm">
   <defs
      id="defs1932" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.70000001"
-     inkscape:cx="77.667144"
-     inkscape:cy="274.91747"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1562"
-     inkscape:window-height="1049"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     fit-margin-top="0"
-     fit-margin-left="0"
+     fit-margin-bottom="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="1049"
+     inkscape:window-width="1562"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="274.91747"
+     inkscape:cx="77.667144"
+     inkscape:zoom="0.70000001"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata1935">
     <rdf:RDF>
@@ -52,31 +52,31 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
+     transform="translate(-64.849125,-109.1835)"
      id="layer1"
-     transform="translate(-64.849125,-109.1835)">
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
     <g
-       id="Column_column"
-       transform="matrix(22.577778,0,0,22.577896,-49.037572,-9538.6013)"
+       style="enable-background:new"
        inkscape:label="#g5642"
-       style="enable-background:new">
-      <rect
-         class="error"
-         style="opacity:0.5;fill:currentColor"
-         id="rect2041"
-         width="3"
-         height="2.9999843"
-         x="5.0441942"
-         y="427.31107" />
+       transform="matrix(22.577778,0,0,22.577896,-49.037572,-9538.6013)"
+       id="Column_column">
       <rect
          y="427.31107"
          x="5.0441942"
          height="2.9999843"
          width="3"
+         id="rect2041"
+         style="opacity:0.5;fill:#031b16"
+         class="error" />
+      <rect
+         class="warning"
+         style="opacity:0.5;fill:#031b16"
          id="rect3757-0"
-         style="opacity:0.5;fill:currentColor"
-         class="warning" />
+         width="3"
+         height="2.9999843"
+         x="5.0441942"
+         y="427.31107" />
     </g>
   </g>
 </svg>

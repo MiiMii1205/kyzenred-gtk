@@ -7,34 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="progress-symbolic.svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 3.175 3.175"
+   width="12"
    height="12"
-   width="12">
+   viewBox="0 0 3.175 3.175"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="progress-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1784"
-     inkscape:window-height="1407"
-     id="namedview6"
-     showgrid="false"
-     inkscape:zoom="14.895833"
-     inkscape:cx="8.7945525"
-     inkscape:cy="15.486619"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:current-layer="svg8"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg8" />
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="15.486619"
+     inkscape:cx="8.7945525"
+     inkscape:zoom="14.895833"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="1407"
+     inkscape:window-width="1818"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <defs
      id="defs2" />
   <metadata
@@ -50,8 +50,8 @@
     </rdf:RDF>
   </metadata>
   <path
-     class="error"
-     style="fill:currentColor"
+     id="path-01"
      d="M 1.058332,0 0,1.058332 V 3.175 H 2.116668 L 3.175,2.116668 V 0 Z"
-     id="path-01" />
+     style="fill:#e51b42;fill-opacity:1"
+     class="error" />
 </svg>

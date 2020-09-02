@@ -7,48 +7,48 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1.0583333mm"
-   height="42.333332mm"
-   viewBox="0 0 1.0583333 42.333332"
-   version="1.1"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="line-v-symbolic.svg"
    id="svg861"
-   sodipodi:docname="hline-symbolic.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   version="1.1"
+   viewBox="0 0 1.0583333 42.333332"
+   height="42.333332mm"
+   width="1.0583333mm">
   <defs
      id="defs855" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="30.88141"
-     inkscape:cy="140.68652"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1564"
-     inkscape:window-height="881"
-     inkscape:window-x="854"
+     inkscape:window-maximized="0"
      inkscape:window-y="244"
-     inkscape:window-maximized="0">
+     inkscape:window-x="854"
+     inkscape:window-height="881"
+     inkscape:window-width="1634"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="140.68652"
+     inkscape:cx="30.88141"
+     inkscape:zoom="1.979899"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
     <sodipodi:guide
-       position="0.66145661,25.530235"
+       id="guide1434"
        orientation="0,-1"
-       id="guide1434" />
+       position="0.66145661,25.530235" />
     <sodipodi:guide
-       position="0.66145661,16.803095"
+       id="guide1436"
        orientation="0,-1"
-       id="guide1436" />
+       position="0.66145661,16.803095" />
   </sodipodi:namedview>
   <metadata
      id="metadata858">
@@ -63,16 +63,16 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
+     transform="translate(-91.697024,-106.58929)"
      id="layer1"
-     transform="translate(-91.697024,-106.58929)">
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
     <path
-       id="path3785"
-       style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1.05833"
-       d="m 91.697024,110.30168 v 34.90854 l 0.529166,3.7124 0.529167,-3.7124 v -34.90854 l -0.529167,-3.71239 z"
-       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
        class="color"
-       sodipodi:nodetypes="ccccccc" />
+       inkscape:connector-curvature="0"
+       d="m 91.697024,110.30168 v 34.90854 l 0.529166,3.7124 0.529167,-3.7124 v -34.90854 l -0.529167,-3.71239 z"
+       style="fill:rgb(148,34,40);fill-opacity:1;stroke:none;stroke-width:1.05833"
+       id="path3785" />
   </g>
 </svg>

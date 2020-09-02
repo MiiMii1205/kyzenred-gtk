@@ -7,33 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="progress-background-symbolic.svg"
-   width="24"
-   height="24"
-   viewBox="0 0 6.3499999 6.3499999"
+   id="svg8"
    version="1.1"
-   id="svg8">
+   viewBox="0 0 6.3499999 6.3499999"
+   height="24"
+   width="24"
+   sodipodi:docname="progress-background-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <sodipodi:namedview
-     inkscape:current-layer="svg8"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="12"
-     inkscape:cx="12"
-     inkscape:zoom="36.541667"
-     showgrid="false"
-     id="namedview6"
-     inkscape:window-height="1407"
-     inkscape:window-width="1718"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1781"
+     inkscape:window-height="1407"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="36.541667"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -49,9 +50,9 @@
     </rdf:RDF>
   </metadata>
   <path
-     id="bar-active-topleft"
-     d="M 0,0 V 6.35 H 6.35 V 0 Z"
-     style="fill:currentColor"
+     sodipodi:nodetypes="ccccc"
      class="error"
-     sodipodi:nodetypes="ccccc" />
+     style="fill:#e51b42;fill-opacity:1"
+     d="M 0,0 V 6.35 H 6.35 V 0 Z"
+     id="bar-active-topleft" />
 </svg>

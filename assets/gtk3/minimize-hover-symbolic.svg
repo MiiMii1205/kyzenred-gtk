@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="22"
-   width="22"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="breeze-minimize-hover-symbolic.svg"
-   viewBox="0 0 22 22"
+   id="svg3"
    version="1.1"
-   id="svg3">
+   viewBox="0 0 22 22"
+   sodipodi:docname="minimize-hover-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   width="22"
+   height="22">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -29,57 +29,58 @@
   <defs
      id="defs6" />
   <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:current-layer="svg3"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="-0.92341665"
-     inkscape:cx="21.897013"
-     inkscape:zoom="12.180556"
-     showgrid="false"
-     id="namedview4"
-     inkscape:window-height="1407"
-     inkscape:window-width="1718"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1818"
+     inkscape:window-height="1407"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="12.180556"
+     inkscape:cx="21.897013"
+     inkscape:cy="-0.92341665"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <g
-     transform="translate(-23)"
+     id="hover-center"
      style="enable-background:new"
-     id="hover-center">
+     transform="translate(-23)">
     <g
-       id="g4206"
-       transform="translate(23)">
+       transform="translate(23)"
+       id="g4206">
       <rect
-         id="rect4208"
-         width="22"
-         height="22"
-         x="0"
+         style="opacity:0.00100002"
          y="0"
-         style="opacity:0.00100002" />
+         x="0"
+         height="22"
+         width="22"
+         id="rect4208" />
     </g>
+    <path
+       style="opacity:0.08;fill:rgb(255,248,247);enable-background:new"
+       d="M 24.343985,12.343138 34.000924,22 43.656015,12.344898 V 9.6546615 L 34.001353,0 24.343985,9.6573675 Z"
+       id="path1145"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       class="color" />
     <path
        class="color"
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
-       id="path1145"
-       d="M 24.343985,12.343138 34.000924,22 43.656015,12.344898 V 9.6546615 L 34.001353,0 24.343985,9.6573675 Z"
-       style="opacity:0.08;fill:currentColor;enable-background:new" />
-    <path
-       style="fill:currentColor;enable-background:new"
-       d="M 30.000337,13.927903 30,15 37.07261,14.99952 38.00034,14.071798 38,13 l -7.071933,1.81e-4 z"
        id="rect22-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc"
-       class="color" />
+       d="M 30.000337,13.927903 30,15 37.07261,14.99952 38.00034,14.071798 38,13 l -7.071933,1.81e-4 z"
+       style="fill:rgb(255,248,247);enable-background:new" />
   </g>
 </svg>

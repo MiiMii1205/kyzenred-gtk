@@ -7,33 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="progress-trough-background-symbolic.svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 0.79374999 0.79374999"
+   width="3"
    height="3"
-   width="3">
+   viewBox="0 0 0.79374999 0.79374999"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="progress-trough-background-symbolic.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <sodipodi:namedview
-     inkscape:current-layer="svg8"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="2.5437179"
-     inkscape:cx="0.41116524"
-     inkscape:zoom="90.509668"
-     showgrid="false"
-     id="namedview7"
-     inkscape:window-height="1407"
-     inkscape:window-width="1718"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1736"
+     inkscape:window-height="1407"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="90.509668"
+     inkscape:cx="0.41116524"
+     inkscape:cy="2.5437179"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2" />
   <metadata
@@ -49,12 +50,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-33.356399,-74.93378)"
-     id="layer1">
+     id="layer1"
+     transform="translate(-33.356399,-74.93378)">
     <path
-       id="as"
+       class="error"
+       style="opacity:0.12;fill:rgb(255,248,247)"
        d="m 32.959524,74.536905 v 1.5875 h 1.5875 v -1.5875 z"
-       style="opacity:0.12;fill:currentColor"
-       class="error" />
+       id="as" />
   </g>
 </svg>

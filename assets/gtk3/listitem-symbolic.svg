@@ -7,34 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 9.9973154 9.9973158"
-   height="37.78513"
-   width="37.78513"
-   version="1.1"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="listitem-symbolic.svg"
    id="svg14"
-   sodipodi:docname="listitem-symbolic .svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   version="1.1"
+   width="37.78513"
+   height="37.78513"
+   viewBox="0 0 9.9973154 9.9973158">
   <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1826"
-     inkscape:window-height="1407"
-     id="namedview8"
-     showgrid="false"
-     inkscape:zoom="18.922788"
-     inkscape:cx="18.892565"
-     inkscape:cy="18.892565"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:current-layer="svg14"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg14" />
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="18.892565"
+     inkscape:cx="18.892565"
+     inkscape:zoom="18.922788"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="1407"
+     inkscape:window-width="1909"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <defs
      id="defs8" />
   <metadata
@@ -45,13 +45,13 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     class="warning"
+     id="path142"
+     style="opacity:1;fill:rgb(201,30,60)"
      d="M 1.794205,2.8938672e-4 0,1.7944994 v 8.2031104 h 8.2031155 l 1.794206,-1.79472 V 2.8938672e-4 Z"
-     style="opacity:1;fill:none"
-     id="path142" />
+     class="warning" />
 </svg>
