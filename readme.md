@@ -7,6 +7,7 @@ A full KDE theme based on gamer aesthetics and modern minimalism (GTK themes and
 - KDE >= 5
 - Inkscape 
 - Bash
+- GTK2 Murrine engine
 
 ## Installation
 Just put this repository in your `~/.themes/` directory (make a new one if it doesn't exist)
