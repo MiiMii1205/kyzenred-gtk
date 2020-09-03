@@ -1,6 +1,6 @@
  # Kyzenred Hacking
 
-So you want to extend the theme, yes? First up, let's talk about what you'll need
+So you want to extend the theme, yes? First up, let's talk about what you'll need!
 
 First, you need to know that Kyzenred is a pure SVG theme. This means that if you want to change things you'll need to know how SVGs works, along with good HTML and CSS knowledge.
 
@@ -73,3 +73,7 @@ As long as you don't touch these everything should be fine.
 
 If you want to know more about this I recommend you to look at the scripts files. They are quite easy to read as long as you're familiar with bash.
 
+## GTK3
+The GTK3 stylesheet is based on KDE's breeze GTK theme. KDE will gracefully override any named GTK3 colors to match your current color scheme so everything should work out of the box. 
+
+If you aren't running KDE then the standard Kyzenred color scheme will be used instead.
